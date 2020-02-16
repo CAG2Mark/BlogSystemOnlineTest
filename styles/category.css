@@ -101,6 +101,10 @@
     color: white !important;
 }
 
+#search-results-container {
+    min-height: calc(100vh - 300px);
+}
+
 /* MOBILE */
 
 @media (max-width: 600px) {
