@@ -28,8 +28,11 @@
     display: none;
 }
 
-
-
+.vertical-align-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 body, sub, sup {
     margin: 0 0 0 0;
