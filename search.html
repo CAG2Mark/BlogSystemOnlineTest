@@ -5,15 +5,16 @@
 <!-- EMPTY PAGE FOR THE BLOG SYSTEM TO WORK WITH. -->
 
 <head>
-    
+
     <base href="index.html" />
 
     <meta name="selectedNavigationItem" content="BLOG">
     <link rel="stylesheet" type="text/css" href="./styles/global.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/category.css" />
 
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Blank Page</title>
+    <title>Search</title>
 
     <!-- fonts -->
 
@@ -48,7 +49,7 @@
 
         <span class="navigation-search-container" id="navigation-topbar-search-container">
             <button class="navigation-search-button" data-target="navigation-sidebar-search-textbox">
-                <img src="./content/icons/baseline_search_black_36dp.png" >
+                <img src="./content/icons/baseline_search_black_36dp.png">
             </button>
 
             <form class="navigation-search-form" action="./search.html">
@@ -91,7 +92,7 @@
 
             <span class="navigation-search-container desktoponly" id="navigation-topbar-search-container">
                 <button class="navigation-search-button" data-target="navigation-topbar-search-textbox">
-                    <img src="./content/icons/baseline_search_black_36dp.png" >
+                    <img src="./content/icons/baseline_search_black_36dp.png">
                 </button>
 
                 <form class="navigation-search-form" action="./search.html">
@@ -132,11 +133,12 @@
 
                     <span class="navigation-search-container">
                         <button class="navigation-search-button" data-target="navigation-header-search-textbox">
-                            <img src="./content/icons/baseline_search_black_36dp.png" >
+                            <img src="./content/icons/baseline_search_black_36dp.png">
                         </button>
 
                         <form class="navigation-search-form" action="./search.html">
-                            <input type="text" name="q" class="desktop-search-textbox" id="navigation-header-search-textbox">
+                            <input type="text" name="q" class="desktop-search-textbox"
+                                id="navigation-header-search-textbox">
                             <input type="submit" class="hidden">
                         </form>
                     </span>
@@ -147,6 +149,40 @@
 
             <!-- ALL CONTENT GOES HERE -->
 
+            <a id="post-template" class="category-link">
+                <div class="category-post-container">
+
+                    <!-- $(REGION HEADER_IMAGE) -->
+                    <img class="mobileonly" id="headerImage" src="./content/images/$(POST HEADER_IMAGE_NAME)">
+                    <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                    <div
+                        class="category-post-details vertical-center $(POST BOOL_HAS_HEADER_IMAGE  category-post-left)">
+                        <h3 class="nopadding" id="post-template-title"></h3>
+
+                        <div class="category-post-meta-container">
+                            <span>By </span>
+                            <span id="post-template-author"></span>
+                            <span class="dot"></span>
+                            <span id="post-template-date"></span>
+                        </div>
+
+                        <!-- 100 specifies the maximum length of the preview -->
+                        <span class="category-post-content-preview" id="post-template-preview"></span>
+                    </div>
+
+                    <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+
+                    <!-- $(REGION HEADER_IMAGE) -->
+                    <img class="desktoponly" id="headerImage" src="./content/images/$(POST HEADER_IMAGE_NAME)">
+                    <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                </div>
+            </a>
+
+            <div class="wide-area clearfix" id="search-results-container">
+
+            </div>
 
             <!-- temp spacer -->
             <div style="height: 2500px">
@@ -167,7 +203,7 @@
 
         </div>
 
-        
+
         <footer id="footer-color-filler"></footer>
     </div>
 </body>

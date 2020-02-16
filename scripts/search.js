@@ -14,13 +14,19 @@ function failedConnect(response) {
     return response.text();
 }
 
+var template = document.getElementById("post-template");
+template.removeAttribute("id");
+
 fetch(requestLink, {
         mode: 'cors'
     })
     .then(failedConnect)
     .then(function (response) {
 
-
+        var json = JSON.parse(response);
+        for (var post in json) {
+            
+        }
 
     }).catch(function (error) {
 
