@@ -16,11 +16,11 @@ function failedConnect(response) {
 
 fetch(requestLink, {
         mode: 'cors'
-    }) //the url is http://localhost:80/?<random number="">. The random number is to adoid web caching so the value is constantly updated - important for older browsers
+    })
     .then(failedConnect)
     .then(function (response) {
 
-        
+
 
     }).catch(function (error) {
 
