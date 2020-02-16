@@ -47,6 +47,17 @@
                 <a href="./contact.html">Contact</a>
             </li>
         </ul>
+
+        <span class="navigation-search-container" id="navigation-topbar-search-container">
+            <button class="navigation-search-button" data-target="navigation-sidebar-search-textbox">
+                <img src="./content/icons/baseline_search_black_36dp.png" >
+            </button>
+
+            <form class="navigation-search-form" action="./search.html">
+                <input type="text" name="q" class="desktop-search-textbox" id="navigation-sidebar-search-textbox">
+                <input type="submit" class="hidden">
+            </form>
+        </span>
     </div>
 
     <div id="bodyarea">
@@ -80,11 +91,22 @@
                 </li>
             </ul>
 
+            <span class="navigation-search-container desktoponly" id="navigation-topbar-search-container">
+                <button class="navigation-search-button" data-target="navigation-topbar-search-textbox">
+                    <img src="./content/icons/baseline_search_black_36dp.png" >
+                </button>
+
+                <form class="navigation-search-form" action="./search.html">
+                    <input type="text" name="q" class="desktop-search-textbox" id="navigation-topbar-search-textbox">
+                    <input type="submit" class="hidden">
+                </form>
+            </span>
+
         </div>
 
         <div id="body-container">
             <header>
-                <a href="./index.html">
+                <a href="index.html">
                     <div id="logo-container">
                         <img alt="HSSC Logo" class="no-select" src="./content/images/hsscLogo.png" id="header-logo">
                         <img class="noSelect" id="header-logo-text" src="./content/images/hsscText.png">
@@ -109,6 +131,17 @@
                             <a href="./contact.html">Contact</a>
                         </li>
                     </ul>
+
+                    <span class="navigation-search-container">
+                        <button class="navigation-search-button" data-target="navigation-header-search-textbox">
+                            <img src="./content/icons/baseline_search_black_36dp.png" >
+                        </button>
+
+                        <form class="navigation-search-form" action="./search.html">
+                            <input type="text" name="q" class="desktop-search-textbox" id="navigation-header-search-textbox">
+                            <input type="submit" class="hidden">
+                        </form>
+                    </span>
                 </div>
 
                 <div class="separator mobileonly"></div>
