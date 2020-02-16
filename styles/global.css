@@ -1,0 +1,555 @@
+/* Default styles */
+
+
+:root {
+    --accent-color: #0070BA;
+    --lightGray: #EEEEEE;
+
+    --text-color: rgb(10, 10, 10);
+
+    --text-color-light: rgb(119, 119, 119);
+
+    --leftNavShiftAmount: 75vw;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.spacer {
+    height: 24px;
+}
+
+.mobileonly {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+body, sub, sup {
+    margin: 0 0 0 0;
+    padding: 0;
+    font: 20px acumin-pro, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    
+    overflow-x: hidden;
+
+    width: 100%;
+
+    height: auto;
+
+    color: var(--text-color);
+}
+
+
+#bodyarea {
+    transition: margin 200ms ease;
+    width: 100%;
+}
+
+#body-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.separator {
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+
+.separator-gray {
+    height: 2px;
+    background-color: #CCCCCC;
+}
+
+/* Support styles */
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* #region HEADER */
+
+header {
+    text-align:center;
+}
+
+/* #endregion */
+
+/* #region types of regions */
+
+.narrow-area {
+    width: 570px;
+    margin-left: 20%;
+}
+
+.wide-area {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* #endregion */
+
+
+/* #region Logo Area */
+
+#logo-container {
+    margin: 16px 0;
+    width: auto;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#header-logo-text {
+    display: inline-block;
+    margin: 0 0 0 12px;
+    vertical-align: middle;
+    color: #333333;
+    height: 41px;
+}
+
+#header-logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 150px;
+}
+
+/* #endregion */
+
+/* Date */
+
+#date-container {
+    height: 30px;
+    text-align: center;
+    width: 100%;
+    margin: -40px 0 16px 0;
+}
+
+/* #region Navigation */
+
+#navigation {
+    height: 50px;
+
+    border-style: solid;
+    border-width: 2px 0;
+    border-radius: 0;
+    border-color: var(--accent-color);
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    position: relative;
+}
+
+.navigation-list {
+    display: inline-block;
+
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+
+    font: bold 22px acumin-pro, Arial, Helvetica, sans-serif;
+    margin: -2px 0 0 0;
+}
+
+.navigation-list li {
+    float: left;
+}
+
+.nav-border {
+    position: relative;
+    width: 2px;
+    float: right;
+    margin-top: 16px;
+    height: 24px;
+    background-color: black;
+}
+
+.navigation-list li a {
+    transition: border-color 80ms;
+
+    display: block;
+    color: black;
+    text-align: center;
+    margin: 10px 24px 0 24px;
+    text-decoration: none;
+
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: transparent;
+}
+
+.navigation-list li a:hover {
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: black;
+}
+
+/* #region search */
+
+.navigation-search-button {
+    height: 36px;
+    width: 36px;
+    padding: 0;
+    margin-top: 7px;
+
+    float: right;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    outline: none;
+}
+
+.navigation-search-container {
+    width: 300px;
+    position: absolute;
+    right: 0;
+}
+
+#navigation-topbar-search-container {
+    right: 4px;
+    top: 3px;
+}
+
+.desktop-search-textbox {
+    transition: opacity 100ms;
+    
+    opacity: 0;
+    pointer-events: none;
+
+    font: 20px acumin-pro, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    line-height: 26px;
+
+    border-radius: 0;
+    border-width: 0 0 2px 0;
+    border-color: var(--accent-color);
+
+    margin: 11px 0 0 0;
+
+    background: transparent;
+}
+
+.desktop-search-textbox:focus {
+    opacity: 1;
+    pointer-events: auto;
+    outline: none;
+}
+
+.navigation-search-button img {
+    margin: 3px;
+
+    height: 30px;
+    width: 30px;
+}
+
+.navigation-search-form {
+    position: absolute;
+    right: 48px;
+}
+/* #endregion */
+
+/* #endregion */
+
+/* #region Top nav */
+
+#topbar {
+    transition: top 200ms ease;
+
+    border-color: #d1d1d1;
+    background-color: white;
+
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    height: 56px;
+    width: 100%;
+
+    position: fixed;
+
+    z-index: 999;
+
+    text-align: center;
+}
+
+#topbar-nav {
+    margin-top: 1px;
+}
+
+.top-desktop-visible {
+    top: 0;
+}
+
+.top-desktop-hidden {
+    top: -58px;
+}
+
+#topbar-hssc-logo {
+    height: 48px;
+    margin: 4px;
+    float: right;
+}
+
+#hamburger-container {
+    cursor: hand;
+    width: 30px;
+    margin: 16px 12px;
+}
+
+.hamburger-bar {
+    position: relative;
+
+    height: 4px;
+    margin: 6px 0;
+    width: 100%;
+
+    background-color: rgb(41, 41, 41);
+}
+
+/* #endregion */
+
+/* #region side navigation */
+
+#sidebar {
+    transition: left 200ms ease;
+
+    width: calc( var(--leftNavShiftAmount) - 2px );
+    height: 100vh;
+
+    position: fixed;
+
+    margin: 0 -4px 0 0;
+
+    background: rgb(238, 238, 238);
+
+    border-style: solid;
+    border-width: 0 2px 0 0;
+    border-color: #b8b8b8;
+}
+
+.pushy-closed {
+    left: calc(-1 * var(--leftNavShiftAmount));
+}
+
+.pushy-open {
+    left: 0;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region FOOTER */
+
+footer {
+    background-color: var(--lightGray);
+    height: 128px;
+    overflow: hidden;
+    margin: 0;
+}
+
+#footer-color-filler {
+    background-color: var(--lightGray);
+    height: 128px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -128px;
+}
+
+
+
+#footer-hssc-logo {
+    height: 72px;
+}
+
+#footer-logo-container {
+    margin-top: 12px;
+}
+
+#footer-logo-container * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#footer-logo-container span {
+    margin: 0 0 6px 12px;
+}
+
+
+/* #endregion */
+
+@media (max-width: 1300px) {
+
+    #body-container {
+        width: 85%;
+    }
+    
+    #header-logo-text {
+        display: none;
+    }
+
+    #date-container {
+        margin-top: -4px;
+    }
+
+    .wide-area {
+        width: 75%;
+    }
+
+    .narrow-area {
+        width: 450px;
+        margin-left: 13%;
+    }
+
+}
+
+
+/* when it is not wide enough to display the hssc text */
+
+@media (max-width: 1100px) {
+    #body-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .narrow-area {
+        width: 390px;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .wide-area {
+        width: 95%;
+    }
+
+    .narrow-area {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .headline {
+        font-size: 46px;
+        line-height: 56px;
+        margin: 16px 0px;
+    }
+
+    #bodyarea {
+        width: 100%;
+        float: left;
+    }
+
+    #body-container {
+        margin-top: 56px;
+        overflow-x: hidden;
+    }
+
+    #nagiation-top {
+        top: 0 !important;
+        display: block !important;
+    }
+
+    .top-desktop-hidden {
+        top: 0;
+        opacity: 1;
+    }
+
+    #header-logo {
+        height: 100px;
+    }
+    
+
+    #headerLogoText {
+        display: none;
+    }
+
+    
+    #navigation {
+        display: none;
+    }
+
+    .mobileonly {
+        display: block;
+    }
+
+    .desktoponly {
+        display: none !important;
+    }
+
+    .bodyshifted {
+        margin: 0 0 0 var(--leftNavShiftAmount);
+        overflow: hidden;
+    }
+
+    .navigation-list {
+        display: block;
+
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+    
+        font: bold 26px acumin-pro, Arial, Helvetica, sans-serif;
+    }
+    
+    .navigation-list li {
+        float: left;
+        clear: left;
+        width: 100%;
+    }
+    
+    .nav-border {
+        float: left;
+
+        position: relative;
+        width: calc( 100% - 48px );
+        margin-top: 4px;
+        margin-left: 24px;
+        height: 2px;
+        background-color: rgb(175, 175, 175);
+    }
+    
+    .navigation-list li a {
+        transition: border-color 200ms;
+    
+        display: block;
+        color: black;
+        text-align: left;
+        margin: 6px 24px 0 24px;
+        text-decoration: none;
+    
+        border-style: solid;
+        border-width: 0 0 2px 0;
+        border-color: transparent;
+    }
+
+    #navigation-side {
+        margin-top: 42px;
+    }
+    
+    .navigation-list li a:hover {
+        border-color: transparent;
+    }
+    
+}
+
+@media (max-width: 350px) {
+    #footer-logo-container span {
+        font-size: 16px;
+    }
+}
