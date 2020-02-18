@@ -48,6 +48,9 @@ body, sub, sup {
     color: var(--text-color);
 }
 
+p {
+    line-height: 1.6em;
+}
 
 #bodyarea {
     transition: margin 200ms ease;
