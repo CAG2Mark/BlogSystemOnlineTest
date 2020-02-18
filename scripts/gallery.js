@@ -10,6 +10,7 @@ class Gallery {
         var indicatorRegion = galleryNode.querySelector(".region-indicators");
 
         for (var i = 0; i < this.pageCount; i++) {
+            
 
             // initialize the indicators
             var newNode = indicatorTemplate.cloneNode(true);
@@ -24,12 +25,11 @@ class Gallery {
             newNode.addEventListener("click", (e) => {
                 var sender = e.srcElement;
 
-                // update selected status
-                sender.classList.add("indicator-selected");
-                this.selectedIndicator.classList.remove("indicator-selected");
-                this.selectedIndicator = sender;
-
                 var index = sender.getAttribute("data-indicator-index");
+
+                if (this.currentPageIndex == index) return;
+                // update selected status
+
                 this.transitionPage(this.currentPageIndex, index, index < this.currentPageIndex);
 
             });
@@ -44,6 +44,13 @@ class Gallery {
                 this.pages[i].style.left = "100%";
             }
         }
+
+        this.indicators = indicatorRegion.querySelectorAll(".indicator:not(.template)");
+
+
+        this.nextPageInterval = setInterval(() => {
+            this.nextPage();
+        }, 7000);
     }
 
     // next page
@@ -67,10 +74,20 @@ class Gallery {
     }
 
     transitionPage(current, to, leftToRight) {
+        var nextIndicator = this.indicators[to];
+
+        nextIndicator.classList.add("indicator-selected");
+        this.selectedIndicator.classList.remove("indicator-selected");
+        this.selectedIndicator = nextIndicator;
+
         var currentPage = this.pages[current];
         var nextPage = this.pages[to];
 
         if (current == to) return;
+
+        // stop the interval.
+
+        clearInterval(this.nextPageInterval);
 
         this.currentPageIndex = to;
 
@@ -106,10 +123,12 @@ class Gallery {
             nextPage.classList.remove("transitioning");
         }, 700);
 
+        this.nextPageInterval = setInterval(() => {
+            this.nextPage();
+        }, 7000);
+
     }
 }
-
-const gallerySlideInterval = 12;
 
 var galleries = document.getElementsByClassName("gallery");
 var galleriesArr = new Array(galleries.length)
@@ -117,7 +136,3 @@ var galleriesArr = new Array(galleries.length)
 for (var i = 0; i < galleries.length; i++) {
     galleriesArr[i] = new Gallery(galleries[i]);
 }
-
-/*setInterval(() => {
-    galleriesArr[0].nextPage();
-}, gallerySlideInterval * 1000);*/
