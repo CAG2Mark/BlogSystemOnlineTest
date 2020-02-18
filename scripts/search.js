@@ -3,6 +3,8 @@ var url = new URL(urlStr);
 
 var searchQuery = url.searchParams.get("q");
 
+document.getElementById("body-search-textbox").value = searchQuery;
+
 //var postsLink = new URL("../blog/posts.json", document.baseURI).href;
 var postsLink = "https://ngp16.github.io/BlogSystemOnlineTest/blog/posts.json";
 
