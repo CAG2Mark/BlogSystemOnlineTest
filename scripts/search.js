@@ -3,6 +3,8 @@ var url = new URL(urlStr);
 
 var searchQuery = url.searchParams.get("q");
 
+//if (searchQuery == "") return;
+
 document.getElementById("body-search-textbox").value = searchQuery;
 
 //var postsLink = new URL("../blog/posts.json", document.baseURI).href;
@@ -29,8 +31,9 @@ function getData() {
         })
         .then(
             (response) => {
-
-                console.log(response);
+                
+                // clear loading icon
+                document.getElementById("loading-icon").classList.add("hidden");
                 
                 var json = JSON.parse(response);
 
