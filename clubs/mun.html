@@ -6,15 +6,18 @@
 
 
 <head>
-
-    <base href="index.html" />
+    
+    <base href="../index.html" />
 
     <meta name="selectedNavigationItem" content="BLOG">
     <link rel="stylesheet" type="text/css" href="./styles/global.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/clubs.css" />
+    <link rel="shortcut icon" href="./icon.ico" />
 
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>About - HSSC</title>
+    <title>MUN - HSSC</title>
 
     <!-- fonts -->
 
@@ -162,86 +165,38 @@
 
             <!-- ALL CONTENT GOES HERE -->
 
-            <div class="wide-area">
-                <h3>The Humanities and Social Sciences Council (HSSC) was formed to strengthen the standing of
-                    humanities and social science disciplines at Sha Tin College. We provide opportunities for students
-                    to engage with these disciplines, cultivating independent passion. </h3>
-                <div class="separator-gray"></div>
-                <p>
-                    <i>
-                        “The humanities are dead”.
-                    </i>
-                </p>
+            <h1 class="text-center">Model United Nations</h1>
 
-                <p>
-                    This emphatic utterance reverberates; its intensity is increasing in an exponential manner,
-                    especially with the dawn of new developments in the age of STEM (Science, Technology,
-                    Engineering,
-                    Mathematics). In Hong Kong - a centre of finance, commerce and entrepreneurship - this ‘death’
-                    has
-                    never been more apparent. To many, it is one that is welcome.
-                </p>
+            <div class="gallery" id="gallery">
+                <div class="gallery-container">
+                    <img src="./content/images/clubs/mun-pics/1.jpg">
+                </div>
+                <div class="gallery-container">
+                    <img src="./content/images/clubs/mun-pics/2.jpg">
+                </div>
+                <div class="gallery-container">
+                    <img src="./content/images/clubs/mun-pics/3.jpg">
+                </div>
+                <div class="gallery-container">
+                    <img src="./content/images/clubs/mun-pics/4.jpg">
+                </div>
+                <div class="gallery-container">
+                    <img src="./content/images/clubs/mun-pics/5.jpg">
+                </div>
+                <div class="gallery-container">
+                    <img src="./content/images/clubs/mun-pics/6.jpg">
+                </div>
 
-                <p>
-                    It is thus ever-important that for students wishing to pursue disciplines such as the humanities
-                    and
-                    social sciences, opportunities should be easy to access. Indeed, even for those pursuing
-                    non-humanities degrees, students should be able to unmitigatedly explore their independent
-                    passions
-                    - perhaps building transferable skills along the way.
-                </p>
-                <p>
-                    Most fortunately, Sha Tin College continues to offer an abundance of opportunities to develop
-                    skills
-                    relevant to the humanities and social sciences, be it through the MYP, IB programme or through
-                    the
-                    myriad of extracurricular opportunities offered. Through the formation of a “Humanities and
-                    Social
-                    Sciences Council”, I seek to further fortify the standing of these disciplines within Sha Tin
-                    College, providing even more opportunities for engagement; both cultivating independent passion
-                    and
-                    fostering appreciation for those unengaged.
-                </p>
-
-                <h4>
-                    Reese Wong,
-                    <br />
-                    Chairperson of the Humanities and Social Sciences Council (HSSC)
-                </h4>
-
-                <div class="separator-gray"></div>
-
-                <h3>HSSC The Paradigm</h3>
-
-                <p>Our flagship newsletter, The Paradigm, creates a centralized platform to promote student groups and
-                    creates an avenue for discourse. The newsletter features a club catalog, an 'individual
-                    achievements' section, and feature photos from around the campus.</p>
-
-                <div class="separator-gray"></div>
-
-                <h3>HSSC “Word of the Day” Widget</h3>
-
-                <iframe src="https://word-of-the-day-hssc.stcwebhost.com"
-                    style="border: none; width: 380px; height: 340px;"></iframe>
-
-                <p>The Humanities and Social Sciences Council (HSSC) launched the ‘Word of the Day’ widget in hopes of
-                    achieving the following aims:</p>
-
-                <ol>
-                    <li>Provide a daily opportunity for Students to build their English vocabulary, essential to success
-                        in academic subjects and in communication</li>
-                    <li>Promote the appreciation of the English language and lesser-known words to the school community
-                    </li>
-                    <li>Incorporate learning into the SMART homepage, increasing SMART’s current appeal and utility and
-                        paving the way for updates to the widget and future projects </li>
-                </ol>
-
-                <p>We received over 170 word submissions, some of which are featured in <i>The Paradigm</i>!</p>
-
-                <div class="separator-gray"></div>
-
-                <p>This website and all of its systems are custom-made by a member of the HSSC.</p>
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-indicator-container no-select region-indicators">
+                        <span class="indicator template template-indicator"></span>
+                    </span>
+                </div>
             </div>
+
+            <a href="./clubs/clubs.html" class="linkfix text-center">
+                <h3>Return to clubs</h3>
+            </a>
 
             <footer>
                 <div class="spacer"></div>
@@ -255,10 +210,12 @@
             <!-- scripts -->
             <script src="./scripts/global.js"></script>
             <script src="./scripts/dateDisplay.js"></script>
+            <script src="./scripts/gallery.js"></script>
+
 
         </div>
 
-
+        
         <footer id="footer-color-filler"></footer>
     </div>
 </body>

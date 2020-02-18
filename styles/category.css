@@ -79,9 +79,7 @@
     width: 42px;
     height: 42px;
     margin: 2px;
-    text-decoration: none;
 
-    color: var(--text-color);
 }
 .category-pages-indicator:hover {
     color: white;
