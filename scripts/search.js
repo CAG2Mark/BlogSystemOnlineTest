@@ -9,8 +9,8 @@ if (!searchQuery) {
 
     document.getElementById("body-search-textbox").value = searchQuery;
 
-    var postsLink = new URL("./blog/posts.json", document.baseURI).href;
-    //var postsLink = "https://ngp16.github.io/BlogSystemOnlineTest/blog/posts.json";
+    //var postsLink = new URL("./blog/posts.json", document.baseURI).href;
+    var postsLink = "https://ngp16.github.io/BlogSystemOnlineTest/blog/posts.json";
 
     postsLink = encodeURIComponent(postsLink);
 
