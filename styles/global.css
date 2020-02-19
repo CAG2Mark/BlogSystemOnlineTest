@@ -259,6 +259,19 @@ header {
     background: transparent;
 }
 
+.dot {
+    height: 6px;
+    width: 6px;
+    background-color: var(--text-color-light);
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.white {
+    background-color: white !important;
+}
+
 .text-center {
     text-align: center;
 }

@@ -14,7 +14,7 @@
 }
 
 .club-container-overlay {
-    transition: opacity 150ms;
+    transition: opacity 250ms;
 
     opacity: 0.8;
 
@@ -50,7 +50,7 @@
 }
 
 .club-container img {
-    transition: transform 150ms ease;
+    transition: transform 250ms ease;
 
     position: absolute;
     object-fit: cover;
