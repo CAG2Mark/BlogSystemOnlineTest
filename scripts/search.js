@@ -58,8 +58,6 @@ function getData() {
 
                     newItem.setAttribute("href", `./blog/${post.HtmlFriendlyTitle}.html`);
                 }
-
-
             }
         )
         .catch(
