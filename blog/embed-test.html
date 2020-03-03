@@ -6,16 +6,16 @@
 
 <head>
     <base href="../index.html" />
-
+    
     <meta name="selectedNavigationItem" content="BLOG">
 
     <link rel="stylesheet" type="text/css" href="./styles/global.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/category.css">
+    <link rel="stylesheet" type="text/css" href="./styles/blog.css">
 
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-    <title>Hello - HSSC</title>
+    <title>Embed Test</title>
 
     <!-- fonts -->
 
@@ -163,82 +163,98 @@
 
             <!-- ALL CONTENT GOES HERE -->
 
+            <div class="wide-area">
 
-            <div class="wide-area clearfix">
-                <h1>Hello</h1>
+                <div class="blog-categories-container">
+                    
+                <!-- $(TEMPLATE POST_CATEGORY_TAG)$(ENDTEMPLATE POST_CATEGORY_TAG) -->
 
-                <!-- $(TEMPLATE CATEGORY_POST_TEMPLATE)$(ENDTEMPLATE CATEGORY_POST_TEMPLATE)-->
-
-                <!-- Parameters: Post template name. -->
-
-                <!-- $(REGION CATEGORY_POST_AREA CATEGORY_POST_TEMPLATE) -->
+                <!-- $(REGION POST_CATEGORY_TAG_AREA POST_CATEGORY_TAG) --> 
 
                 
+                    <a class="blog-category-tag" href="./blog/hello.html">Hello</a>
+                <!-- $(ENDREGION POST_CATEGORY_TAG_AREA) -->
 
-                <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
-                <a class="category-link linkfix" href="./blog/embed-test.html">
-                    <div class="category-post-container">
-
-                        <!-- $(REGION HEADER_IMAGE)$(ENDREGION HEADER_IMAGE) -->
-
-                        <div
-                            class="category-post-details vertical-center category-post-left">
-                            <h3 class="nopadding">Embed Test</h3>
-
-                            <div class="category-post-meta-container">
-                                <span>By </span>
-                                <span>Mark Ng</span>
-                                <span class="dot"></span>
-                                <span>March 3rd, 2020</span>
-                            </div>
-
-                            <!-- 100 specifies the maximum length of the preview -->
-                            <span class="category-post-content-preview">Embed test of a very good Chef John video</span>
-                        </div>
-
-                        <div class="separator-gray" style="margin: 4px 0 12px 0;"></div>
-
-                        <!-- $(REGION HEADER_IMAGE)$(ENDREGION HEADER_IMAGE) -->
-
-                    </div>
-                </a>
-
-                <!-- $(ENDREGION CATEGORY_POST_AREA) -->
-
-                <div id="category-pages">
-
-
-                    <!-- $(TEMPLATE CATEGORY_PAGES_TEMPLATE_SELECTED)$(ENDTEMPLATE CATEGORY_PAGES_TEMPLATE_SELECTED) -->
-
-
-                    <!-- $(TEMPLATE CATEGORY_PAGES_TEMPLATE)$(ENDTEMPLATE CATEGORY_PAGES_TEMPLATE) -->
-
-
-                    <!-- Parameters: Indicators to display, Indicator template name, selected indicator template name.-->
-
-                    <!-- $(REGION CATEGORY_PAGES_AREA 5 CATEGORY_PAGES_TEMPLATE CATEGORY_PAGES_TEMPLATE_SELECTED) -->
-
-                    
-
-                    <div class="category-pages-indicator category-pages-indicator-selected">
-                        <span class="category-pages-indicator-text">1</span>
-                    </div>
-
-                    <!-- $(ENDREGION CATEGORY_PAGES_AREA)-->
                 </div>
 
+                <h1 class="headline">Embed Test</h1>
+
+                <!-- $(REGION HEADER_IMAGE)$(ENDREGION HEADER_IMAGE) -->
+
+
+                <div class="blog-post-data-container" id="blog-post-author-container">
+                    <span>By </span>
+                    <span>Mark Ng</span>
+                </div>
+
+                <div class="blog-post-data-container" id="blog-post-date-container">
+                    <span>Published on </span>
+                    <span>March 3rd, 2020</span>
+                </div>
+
+                <div style="height: 6px"></div>
+
+                <div class="separator"></div>
             </div>
 
+            <div class="narrow-area-left" id="blog-post-content-area">
+                <p><span style="font-size: 20px; ">Embed test of a very good Chef John video</span></p><iframe width="560" height="315" src="https://www.youtube.com/embed/y1kpQv_m0b0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p></p><p><span style="font-size: 20px; ">Embed of our made in-house word of the day widget</span></p><iframe src="https://word-of-the-day-hssc.stcwebhost.com" style="border: none; width: 380px; height: 340px;"></iframe><p></p><p><span style="font-size: 20px; ">Test finish</span></p>
 
+                <div class="blog-categories-container" style="margin-top: 12px; margin-bottom: 12px;">
 
+                    <!-- $(REGION POST_CATEGORY_TAG_AREA POST_CATEGORY_TAG) -->
+    
+                    
+                    <a class="blog-category-tag" href="./blog/hello.html">Hello</a>
+                <!-- $(ENDREGION POST_CATEGORY_TAG_AREA) -->
+    
+                </div>
+            </div>
 
+            
 
+            <div class="wide-area">
 
+                <div class="separator"></div>
+
+                <div style="height: 8px"></div>
+
+                <!-- DISQUS AREA -->
+
+                <div id="disqus_thread"></div>
+                <script>
+                    /**
+                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                    var disqus_config = function () {
+
+                        this.page.url = window.location.href; // Replace PAGE_URL with your page's canonical URL variable
+
+                        // TEST URL
+                        //this.page.url = "https://hsscstc.github.io/blog/test.html"; 
+                        
+                        this.page.identifier =
+                            "Q6kXF4kHElgE0odI"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+
+                    (function () { // DON'T EDIT BELOW THIS LINE
+                        var d = document,
+                            s = d.createElement('script');
+                        s.src = 'https://hssc-1.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+                        powered by Disqus.</a></noscript>
+            </div>
+            
             <footer>
                 <div class="spacer"></div>
 
                 <span id="footer-logo-container">
-                    <img alt="HSSC Logo" id="footer-hssc-logo" src="content/images/hsscLogo.png">
+                    <img alt="HSSC Logo" id="footer-hssc-logo" src="./content/images/hsscLogo.png">
                     <span>Copyright © 2020 HSSC</span>
                 </span>
             </footer>
