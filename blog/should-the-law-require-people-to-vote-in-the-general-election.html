@@ -5,34 +5,31 @@
 <html lang="en" id="html">
 
 <head>
-
     <base href="../index.html" />
 
     <meta name="selectedNavigationItem" content="BLOG">
+
     <link rel="stylesheet" type="text/css" href="./styles/global.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/home.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/category.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/blog.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/blog.css">
+
     <link rel="shortcut icon" href="./icon.ico" />
 
 
     <!-- SOCIAL EMBEDS -->
-    <meta name="description" content="Imagine being forced to choose a restaurant when you have absolutely no preference; when you’re physically unfit to decide; or even when you(...)">
+    <meta name="description" content="Imagine being forced to choose a restaurant when you have absolutely no preference; when you’re unfit to decide; or even when your other bel(...)">
     <meta name="author" content="Vania Chow">
 
     <meta name="og:title" content="Should the Law Require People to Vote in the General Election?">
-    <meta name="og:description" content="Imagine being forced to choose a restaurant when you have absolutely no preference; when you’re physically unfit to decide; or even when you(...)">
+    <meta name="og:description" content="Imagine being forced to choose a restaurant when you have absolutely no preference; when you’re unfit to decide; or even when your other bel(...)">
 
     <!-- $(REGION HEADER_IMAGE) -->
-    <meta property="og:image" content="./content/images/bf24dAlAUZSNqFFt_HEADER.jpg">
+    <meta property="og:image" content="./content/images/2WhlmtFlXxfWs9YW_HEADER.jpg">
     <!-- $(ENDREGION HEADER_IMAGE) -->
     <meta name="twitter:card" content="summary_large_image">
 
-
-
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+
     <title>Should the Law Require People to Vote in the General Election?</title>
 
     <!-- fonts -->
@@ -41,6 +38,10 @@
 
     <!-- Acumin via. typekit -->
     <link rel="stylesheet" href="https://use.typekit.net/idx8cma.css">
+
+    <!-- Merriweather via. google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 
 
 </head>
@@ -56,6 +57,10 @@
             </li>
             <li>
                 <a href="./blog/blog.html">Articles</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="./clubs/clubs.html">Clubs</a>
                 <span class="nav-border"></span>
             </li>
             <li>
@@ -84,7 +89,7 @@
         <div id="topbar" class="top-desktop-hidden">
 
             <a href="./index.html">
-                <img alt="ISSIA Logo" class="mobileonly" id="topbar-logo" src="./content/images/logo.png">
+                <img alt="HSSC Logo" class="mobileonly" id="topbar-hssc-logo" src="./content/images/hsscLogo.png">
             </a>
 
             <span class="mobileonly" id="hamburger-container">
@@ -102,7 +107,10 @@
                     <span class="nav-border"></span>
                     <a href="./blog/blog.html">Articles</a>
                 </li>
-
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="./clubs/clubs.html">Clubs</a></li>
+                <li>
                 <li>
                     <span class="nav-border"></span>
                     <a href="./about.html">About</a></li>
@@ -128,7 +136,8 @@
             <header>
                 <a href="index.html">
                     <div id="logo-container">
-                        <img alt="ISSIA Logo" class="no-select" src="./content/images/logo.png" id="header-logo">
+                        <img alt="HSSC Logo" class="no-select" src="./content/images/hsscLogo.png" id="header-logo">
+                        <img class="noSelect" id="header-logo-text" src="./content/images/hsscText.png">
                     </div>
                 </a>
                 <div id="date-container">
@@ -143,6 +152,10 @@
                             <span class="nav-border"></span>
                             <a href="./blog/blog.html">Articles</a>
                         </li>
+                        <li>
+                            <span class="nav-border"></span>
+                            <a href="./clubs/clubs.html">Clubs</a></li>
+                        <li>
                         <li>
                             <span class="nav-border"></span>
                             <a href="./about.html">About</a></li>
@@ -167,7 +180,6 @@
                 <div class="separator mobileonly"></div>
             </header>
 
-
             <!-- ALL CONTENT GOES HERE -->
 
             <div class="wide-area">
@@ -178,40 +190,48 @@
 
                     <!-- $(REGION POST_CATEGORY_TAG_AREA POST_CATEGORY_TAG) -->
 
+                    
+                    <a class="blog-category-tag" href="./blog/other.html">Other</a>
                     <!-- $(ENDREGION POST_CATEGORY_TAG_AREA) -->
 
                 </div>
 
-                <h1 class="headline">Should the Law Require People to Vote in the General Election?</h1>
+                <span class="serif-area">
 
-                <!-- $(REGION HEADER_IMAGE) -->
-                <img src="./content/images/bf24dAlAUZSNqFFt_HEADER.jpg">
-                <p class="blog-post-image-caption">Image: Brooking Institution</p>
-                <!-- $(ENDREGION HEADER_IMAGE) -->
+                    <h1 class="headline">Should the Law Require People to Vote in the General Election?</h1>
+
+                    <!-- $(REGION HEADER_IMAGE) -->
+                    <img src="./content/images/2WhlmtFlXxfWs9YW_HEADER.jpg">
+                    <p class="blog-post-image-caption"></p>
+                    <!-- $(ENDREGION HEADER_IMAGE) -->
 
 
-                <div class="blog-post-data-container" id="blog-post-author-container">
-                    <span>By </span>
-                    <span>Vania Chow</span>
-                </div>
+                    <div class="blog-post-data-container" id="blog-post-author-container">
+                        <span>By </span>
+                        <span>Vania Chow</span>
+                    </div>
 
-                <div class="blog-post-data-container" id="blog-post-date-container">
-                    <span>Published on </span>
-                    <span>February 11th, 2020</span>
-                </div>
+                    <div class="blog-post-data-container" id="blog-post-date-container">
+                        <span>Published on </span>
+                        <span>April 3rd, 2020</span>
+                    </div>
 
-                <div style="height: 6px"></div>
+                    <div style="height: 6px"></div>
 
-                <div class="separator"></div>
+                    <div class="separator"></div>
+
+                </span>
             </div>
 
-            <div class="narrow-area-left" id="blog-post-content-area">
-                <p><span style="font-size: 20px; ">Imagine being forced to choose a restaurant when you have absolutely no preference; when you’re physically unfit to decide; or even when your other beliefs contradict with you having to make an opinion- it’s inefficient, and quite a nuisance to say the least. Compulsory voting is the same thing: a grey-area infringement on basic rights, an impractical solution, and perhaps to some extent even an undermining of the legal system. </span></p><p><span style="font-size: 20px; ">It is commonly accepted that the inherent principles of the law are establishing standards, maintaining order, resolving disputes, and protecting rights. Compulsory voting can be seen to adhere to these functions in that it establishes a standard for voter turnout in elections. However, it can also be seen as a violation of the latter objective through it’s arguable infringement upon freedom of speech.</span></p><p><span style="font-size: 20px; ">In most Western nations, including the United Kingdom, citizens have a positive and negative right to freedom of speech: meaning that they have both rights of expression and rights or inexpression. As voting constitutes as an expression of opinion, the implementation of compulsory voting would lead to citizens being legally binded to express their opinions- hence violating these rights. Furthermore, another basic right that is afforded by individuals is their freedom to religion. Though the percentage of population by which this is applicable to is small, it nevertheless is still a contradiction. Some denominations, such as Jehovah’s Witnesses and Christadelphians, have openly committed to maintaining political neutrality. With the implementation of this law, such individuals must contravene against their religion, consequently restricting their freedom to faith. </span></p><p><span style="font-size: 20px; ">Of course, citizens could submit protest (one’s that don’t count) or donkey (randomly selected) ballots. Currently, in the 10 countries where compulsory voting laws are enforced, 9 of them -with the exception of DPRK- allow the submitting of declined ballots. However, as these ballots are completely redundant, decreeing for such individuals to vote is a waste of resources. On the other hand, donkey votes perhaps pose even greater detriment. As the purpose of an election is to gain general consensus regarding the preferences of a population, random voting undermines this and lead to a misrepresentation of public interests. This has posed as an issue in Australia, where Compulsory Voting is enforced, with an estimation of a significant 13% increased voting for a party during a long-list election. </span></p><p><span style="font-size: 20px; ">Finally, some individuals -such as the mentally ill- are simply incapable of voting and must be exempt from this law. To have them suffer consequences for a deed they cannot perform would be unfair. But, at the same time, to collate a list of individuals and their justification for not voting would be expensive, posing opportunity costs for revenue that could be better spent on merit activities such as education. </span></p><p><span style="font-size: 20px; ">In conclusion, this law sacrifices many costs, such as the infringement of rights and impractical implementation, to endure only one true benefit of high voter turnout. Countries should not implement this unless out of desperate necessity to mitigate an extremely low voter turnout, and even if they do so, they must identify easy and low-cost methods for individuals to exempt. </span></p>
+            <div class="narrow-area-left serif-area" id="blog-post-content-area">
+                <p><span style="font-size: 18px; ">Imagine being forced to choose a restaurant when you have absolutely no preference; when you’re unfit to decide; or even when your other beliefs contradict with you having to make an opinion- it’s illogical, and quite a nuisance to say the least. Compulsory voting is the same thing: a grey-area infringement on basic rights, an impractical solution, and perhaps to some extent even undermines the legal system; this is the case currently in 14 different countries worldwide, including Australia and Brazil. Why? To increase voter turnout.</span></p><p><span style="font-size: 18px; ">Though compulsory voting has indeed tackled the issue of public disinterest and low turnout numbers, it has significant downfalls. It is commonly accepted that the inherent principles of the law are establishing standards, maintaining order, resolving disputes, and protecting rights</span><sup style="">1</sup><span style="font-size: 18px; ">. Compulsory voting can be seen to adhere to these functions in that it establishes a standard for voter turnout in elections. However, it can also be seen as a violation of the latter objective through it’s arguable infringement upon freedom of speech.</span></p><p><span style="font-size: 18px; ">In most Western nations, citizens have a positive and negative right to freedom of speech: meaning that they have both rights of expression and rights or inexpression. As voting constitutes an expression of opinion, the implementation of compulsory voting would lead to citizens being legally bound to express their opinions - hence violating these rights. Furthermore, another basic right that is afforded by individuals is their freedom to religion. Though the percentage of population by which this is applicable is small, it nevertheless is still a contradiction. Some denominations, such as Jehovah’s Witnesses</span><sup style="">2</sup><span style="font-size: 18px; "> and Christadelphians, have openly committed to maintaining political neutrality, and hence do not allow voting. With the implementation of this law, such individuals must contravene against their religion, consequently violating their freedom to faith. </span></p><p><span style="font-size: 18px; ">Of course, citizens could submit blank votes or donkey (randomly selected) ballots. Currently, in the 10 countries where compulsory voting laws are enforced, 9 of them -with the exception of DPRK</span><sup style="">3</sup><span style="font-size: 18px; "> - allow the submitting of declined ballots. However, as these ballots are completely redundant, decreeing for such individuals to vote is a waste of resources. On the other hand, donkey votes perhaps pose even greater detriment. As the purpose of an election is to gain general consensus regarding the preferences of a population, random voting undermines this and leads to a misrepresentation of public interests. However, it must be acknowledged that optional voting too poses risks of such misrepresentation if the voter turnout is too low. </span></p><p><span style="font-size: 18px; ">Finally, some individuals (such as the mentally ill) are simply incapable of voting and must be exempt from this law. To have them suffer consequences for a deed they cannot perform would be unfair. But, at the same time, collating a list of individuals and their justification for not voting would be expensive, posing opportunity costs for revenue that could be better spent on merit activities such as education. </span></p><p><span style="font-size: 18px; ">In conclusion, this law sacrifices many rights, such as the infringement of rights and impractical implementation, to engender only one true benefit of high voter turnout. Countries should not implement this unless out of desperate necessity to mitigate an extremely low voter turnout, and even if they do so, they must identify easy and low-cost methods for individuals to exempt. Instead, other methods designed to increase voter turnout such as increasing the accessibility of poll stations and simplifying the registration procedure should be implemented as unlike compulsory voting, they pose no alterations to the inherent values of voting. </span></p><p></p><p><span style="font-size: 18px; ">-</span></p><p><span style="font-size: 15px; ">1 - Learning, Lumen. “Introduction to Business [Deprecated].” Lumen, courses.lumenlearning.com/wmopen-introbusiness/chapter/meaning-and-purposes-of-the-law/.</span></p><p><span style="font-size: 15px; ">2 -  “English Version: Jehovah's Witnesses Risk Exclusion If Voting in Elections.” Vårt Land, 8 Aug. 2019, www.vl.no/nyhet/jehovah-s-witnesses-risk-exclusion-if-voting-in-elections-1.1564304.</span></p><p><span style="font-size: 15px; ">3 -  “Compulsory Voting.” International IDEA, www.idea.int/data-tools/data/voter-turnout/compulsory-voting.</span></p><p><span style="font-size: 15px; ">-</span></p><p></p><p><span style="font-size: 18px; font-weight: bold; ">Works Cited</span></p><p><span style="font-size: 18px; ">“Australia Votes: Federal Election 2004.” Minor Party Preferences. Antony Green Election Guide. Federal Election 2004. Australian Broadcasting Corporation (ABC), www.abc.net.au/elections/federal/2004/guide/minorprefs.htm.</span></p><p><span style="font-size: 18px; ">Calvin, John, et al. “Purpose of the Law.” Precept Austin, www.preceptaustin.org/purpose-of-the-law.</span></p><p><span style="font-size: 18px; ">Clare. “United Kingdom.” Limits on Freedom of Expression, 1 June 2019, www.loc.gov/law/help/freedom-expression/uk.php.</span></p><p><span style="font-size: 18px; ">“Compulsory Voting.” International IDEA, www.idea.int/data-tools/data/voter-turnout/compulsory-voting.</span></p><p><span style="font-size: 18px; ">“Compulsory Voting, Turnout, and Government Spending: Evidence from Austria.” Cato Institute, 26 Jan. 2017, www.cato.org/publications/research-briefs-economic-policy/compulsory-voting-turnout-government-spending-evidence.</span></p><p><span style="font-size: 18px; ">“English Version: Jehovah's Witnesses Risk Exclusion If Voting in Elections.” Vårt Land, 8 Aug. 2019, www.vl.no/nyhet/jehovah-s-witnesses-risk-exclusion-if-voting-in-elections-1.1564304.</span></p><p><span style="font-size: 18px; ">Learning, Lumen. “Introduction to Business [Deprecated].” Lumen, courses.lumenlearning.com/wmopen-introbusiness/chapter/meaning-and-purposes-of-the-law/.</span></p><p><span style="font-size: 18px; ">“Locke: ‘Where There Is No Law, There Is No Freedom’ / in Propria Persona.” / In Propria Persona, inpropriapersona.com/articles/locke-where-there-is-no-law-there-is-no-freedom/.</span></p><p><span style="font-size: 18px; ">Moyo, Dambisa. “Make Voting Mandatory in the U.S.” The New York Times, The New York Times, 15 Oct. 2019, www.nytimes.com/2019/10/15/opinion/united-states-voting-mandatory.html.</span></p><p></p>
 
                 <div class="blog-categories-container" style="margin-top: 12px; margin-bottom: 12px;">
 
                     <!-- $(REGION POST_CATEGORY_TAG_AREA POST_CATEGORY_TAG) -->
 
+                    
+                    <a class="blog-category-tag" href="./blog/other.html">Other</a>
                     <!-- $(ENDREGION POST_CATEGORY_TAG_AREA) -->
 
                 </div>
@@ -236,19 +256,19 @@
                     var disqus_config = function () {
 
                         this.page.url = window.location
-                        .href; // Replace PAGE_URL with your page's canonical URL variable
+                            .href; // Replace PAGE_URL with your page's canonical URL variable
 
                         // TEST URL
                         //this.page.url = "https://hsscstc.github.io/blog/test.html"; 
 
                         this.page.identifier =
-                            "bf24dAlAUZSNqFFt"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                            "2WhlmtFlXxfWs9YW"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                     };
 
                     (function () { // DON'T EDIT BELOW THIS LINE
                         var d = document,
                             s = d.createElement('script');
-                        s.src = 'https://issia.disqus.com/embed.js';
+                        s.src = 'https://hssc-1.disqus.com/embed.js';
                         s.setAttribute('data-timestamp', +new Date());
                         (d.head || d.body).appendChild(s);
                     })();
@@ -261,17 +281,18 @@
                 <div class="spacer"></div>
 
                 <span id="footer-logo-container">
-                    <img alt="ISSIA Logo" id="footer-logo" src="./content/images/logo.png">
-                    <span>Copyright © 2020 ISSIA</span>
+                    <img alt="HSSC Logo" id="footer-hssc-logo" src="./content/images/hsscLogo.png">
+                    <span>Copyright © 2020 HSSC</span>
                 </span>
             </footer>
 
             <!-- scripts -->
-            <script src="./scripts/global.js"></script>
-            <script src="./scripts/dateDisplay.js"></script>
-            <script src="./scripts/gallery.js"></script>
+            <script src="scripts/global.js"></script>
+            <script src="scripts/dateDisplay.js"></script>
+            <script src="scripts/blog.js"></script>
 
         </div>
+
 
         <footer id="footer-color-filler"></footer>
     </div>

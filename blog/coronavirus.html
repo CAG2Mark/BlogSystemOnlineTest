@@ -5,19 +5,19 @@
 <html lang="en" id="html">
 
 <head>
-    
     <base href="../index.html" />
 
     <meta name="selectedNavigationItem" content="BLOG">
+
     <link rel="stylesheet" type="text/css" href="./styles/global.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/home.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/category.css" />
-    <link rel="shortcut icon" href="./icon.ico" />
+    <link rel="stylesheet" type="text/css" href="./styles/category.css">
 
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>HSSC</title>
+
+    <link rel="shortcut icon" href="./icon.ico" />
+
+    <title>Coronavirus - HSSC</title>
 
     <!-- fonts -->
 
@@ -26,6 +26,9 @@
     <!-- Acumin via. typekit -->
     <link rel="stylesheet" href="https://use.typekit.net/idx8cma.css">
 
+    <!-- Merriweather via. google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -40,6 +43,10 @@
             </li>
             <li>
                 <a href="./blog/blog.html">Articles</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="./clubs/clubs.html">Clubs</a>
                 <span class="nav-border"></span>
             </li>
             <li>
@@ -68,7 +75,7 @@
         <div id="topbar" class="top-desktop-hidden">
 
             <a href="./index.html">
-                <img alt="ISSIA Logo" class="mobileonly" id="topbar-logo" src="./content/images/logo.png">
+                <img alt="HSSC Logo" class="mobileonly" id="topbar-hssc-logo" src="./content/images/hsscLogo.png">
             </a>
 
             <span class="mobileonly" id="hamburger-container">
@@ -86,7 +93,10 @@
                     <span class="nav-border"></span>
                     <a href="./blog/blog.html">Articles</a>
                 </li>
-
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="./clubs/clubs.html">Clubs</a></li>
+                <li>
                 <li>
                     <span class="nav-border"></span>
                     <a href="./about.html">About</a></li>
@@ -112,7 +122,8 @@
             <header>
                 <a href="index.html">
                     <div id="logo-container">
-                        <img alt="ISSIA Logo" class="no-select" src="./content/images/logo.png" id="header-logo">
+                        <img alt="HSSC Logo" class="no-select" src="./content/images/hsscLogo.png" id="header-logo">
+                        <img class="noSelect" id="header-logo-text" src="./content/images/hsscText.png">
                     </div>
                 </a>
                 <div id="date-container">
@@ -127,6 +138,10 @@
                             <span class="nav-border"></span>
                             <a href="./blog/blog.html">Articles</a>
                         </li>
+                        <li>
+                            <span class="nav-border"></span>
+                            <a href="./clubs/clubs.html">Clubs</a></li>
+                        <li>
                         <li>
                             <span class="nav-border"></span>
                             <a href="./about.html">About</a></li>
@@ -151,232 +166,200 @@
                 <div class="separator mobileonly"></div>
             </header>
 
-
             <!-- ALL CONTENT GOES HERE -->
 
 
             <div class="wide-area clearfix">
-                <h1>Coronavirus</h1>
 
-                <!-- $(TEMPLATE CATEGORY_POST_TEMPLATE)$(ENDTEMPLATE CATEGORY_POST_TEMPLATE)-->
+                <span class="serif-area">
 
-                <!-- Parameters: Post template name. -->
+                    <h1 style="margin: 32px 0 16px 0">Coronavirus</h1>
 
-                <!-- $(REGION CATEGORY_POST_AREA CATEGORY_POST_TEMPLATE) -->
+                    <!-- $(TEMPLATE CATEGORY_POST_TEMPLATE)$(ENDTEMPLATE CATEGORY_POST_TEMPLATE)-->
 
-                
+                    <!-- Parameters: Post template name. -->
 
-                <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
-                <a class="category-link linkfix" href="./blog/the-extent-of-spreading-social-panic-by-the-media-regarding-coronavirus.html">
-                    <div class="category-post-container">
+                    <!-- $(REGION CATEGORY_POST_AREA CATEGORY_POST_TEMPLATE) -->
 
-                        <!-- $(REGION HEADER_IMAGE) -->
-                        <img class="mobileonly" src="./content/images/izQHh8J3vVWiRnxm_HEADER.png">
-                        <!-- $(ENDREGION HEADER_IMAGE) -->
+                    
 
-                        <div
-                            class="category-post-details vertical-center ">
-                            <h3 class="nopadding">The extent of spreading social panic by the media regarding Coronavirus</h3>
+                    <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
+                    <a class="category-link linkfix" href="./blog/the-extent-of-spreading-social-panic-by-the-media-regarding-coronavirus.html">
+                        <div class="category-post-container">
 
-                            <div class="category-post-meta-container">
-                                <span>By </span>
-                                <span>Charlton Sullivan</span>
-                                <span class="dot"></span>
-                                <span>March 22nd, 2020</span>
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="mobileonly" src="./content/images/17SXug6hYC7sZb9s_HEADER.png">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                            <div
+                                class="category-post-details vertical-center ">
+                                <h3 class="nopadding">The extent of spreading social panic by the media regarding Coronavirus</h3>
+
+                                <div class="category-post-meta-container">
+                                    <span>By </span>
+                                    <span>Charlton Sullivan</span>
+                                    <span class="dot"></span>
+                                    <span>April 3rd, 2020</span>
+                                </div>
+
+                                <!-- 100 specifies the maximum length of the preview -->
+                                <span class="category-post-content-preview">Recently, regarding the recent outbreak of the new coronavirus COVID-2019 in Wuhan Pr(...)</span>
                             </div>
 
-                            <!-- 100 specifies the maximum length of the preview -->
-                            <span class="category-post-content-preview">Recently, regarding the recent outbreak of the new coronavirus COVID-2019 in Wuhan Pr(...)</span>
+                            <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="desktoponly" src="./content/images/17SXug6hYC7sZb9s_HEADER.png">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
+
                         </div>
 
-                        <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+                        <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
+                    </a>
 
-                        <!-- $(REGION HEADER_IMAGE) -->
-                        <img class="desktoponly" src="./content/images/izQHh8J3vVWiRnxm_HEADER.png">
-                        <!-- $(ENDREGION HEADER_IMAGE) -->
+                    
 
-                    </div>
+                    <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
+                    <a class="category-link linkfix" href="./blog/the-impact-of-transparency-and-information-flow-on-covid-19.html">
+                        <div class="category-post-container">
 
-                    <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
-                </a>
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="mobileonly" src="./content/images/ylCsOCQfUlTW1HGS_HEADER.png">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
 
-                
+                            <div
+                                class="category-post-details vertical-center ">
+                                <h3 class="nopadding">The Impact of Transparency and Information Flow on Covid-19</h3>
 
-                <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
-                <a class="category-link linkfix" href="./blog/coronavirus-cases-climb-across-asia-pacific-as-lockdowns-in-us-widen.html">
-                    <div class="category-post-container">
+                                <div class="category-post-meta-container">
+                                    <span>By </span>
+                                    <span>Ronni Kwok</span>
+                                    <span class="dot"></span>
+                                    <span>April 3rd, 2020</span>
+                                </div>
 
-                        <!-- $(REGION HEADER_IMAGE) -->
-                        <img class="mobileonly" src="./content/images/4bUWwricj6yyumII_HEADER.jpg">
-                        <!-- $(ENDREGION HEADER_IMAGE) -->
-
-                        <div
-                            class="category-post-details vertical-center ">
-                            <h3 class="nopadding">Coronavirus cases climb across Asia Pacific as lockdowns in US widen</h3>
-
-                            <div class="category-post-meta-container">
-                                <span>By </span>
-                                <span>Alison Rourke</span>
-                                <span class="dot"></span>
-                                <span>March 21st, 2020</span>
+                                <!-- 100 specifies the maximum length of the preview -->
+                                <span class="category-post-content-preview">The recent outbreak of the deadly Covid-19 has spurred global action and attention. O(...)</span>
                             </div>
 
-                            <!-- 100 specifies the maximum length of the preview -->
-                            <span class="category-post-content-preview">Countries across the Asia Pacific have continued to report big rises in Covid-19 infe(...)</span>
+                            <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="desktoponly" src="./content/images/ylCsOCQfUlTW1HGS_HEADER.png">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
+
                         </div>
 
-                        <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+                        <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
+                    </a>
 
-                        <!-- $(REGION HEADER_IMAGE) -->
-                        <img class="desktoponly" src="./content/images/4bUWwricj6yyumII_HEADER.jpg">
-                        <!-- $(ENDREGION HEADER_IMAGE) -->
+                    
 
-                    </div>
+                    <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
+                    <a class="category-link linkfix" href="./blog/interesting-past-times.html">
+                        <div class="category-post-container">
 
-                    <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
-                </a>
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="mobileonly" src="./content/images/zHar7syEwPqDEJgv_HEADER.jpg">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
 
-                
+                            <div
+                                class="category-post-details vertical-center ">
+                                <h3 class="nopadding">Interesting Past Times</h3>
 
-                <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
-                <a class="category-link linkfix" href="./blog/coronavirus-in-ny-deluge-of-cases-begins-hitting-hospitals.html">
-                    <div class="category-post-container">
+                                <div class="category-post-meta-container">
+                                    <span>By </span>
+                                    <span>Michelle Li</span>
+                                    <span class="dot"></span>
+                                    <span>April 3rd, 2020</span>
+                                </div>
 
-                        <!-- $(REGION HEADER_IMAGE) -->
-                        <img class="mobileonly" src="./content/images/z2a3n0gDg7INMRn6_HEADER.jpg">
-                        <!-- $(ENDREGION HEADER_IMAGE) -->
-
-                        <div
-                            class="category-post-details vertical-center ">
-                            <h3 class="nopadding">Coronavirus in N.Y.: ‘Deluge’ of Cases Begins Hitting Hospitals</h3>
-
-                            <div class="category-post-meta-container">
-                                <span>By </span>
-                                <span>Brian M. Rosenthal, Joseph Goldstein and Michael Rothfeld</span>
-                                <span class="dot"></span>
-                                <span>March 21st, 2020</span>
+                                <!-- 100 specifies the maximum length of the preview -->
+                                <span class="category-post-content-preview">We all have been under ‘house-arrest’ ever since the end of the Chinese New Year holi(...)</span>
                             </div>
 
-                            <!-- 100 specifies the maximum length of the preview -->
-                            <span class="category-post-content-preview">New York State’s long-feared surge of coronavirus cases has begun, thrusting the medi(...)</span>
+                            <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="desktoponly" src="./content/images/zHar7syEwPqDEJgv_HEADER.jpg">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
+
                         </div>
 
-                        <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+                        <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
+                    </a>
 
-                        <!-- $(REGION HEADER_IMAGE) -->
-                        <img class="desktoponly" src="./content/images/z2a3n0gDg7INMRn6_HEADER.jpg">
-                        <!-- $(ENDREGION HEADER_IMAGE) -->
+                    
 
-                    </div>
+                    <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
+                    <a class="category-link linkfix" href="./blog/how-covid-19-creates-huge-learning-disadvantages-for-hk-students-.html">
+                        <div class="category-post-container">
 
-                    <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
-                </a>
+                            <!-- $(REGION HEADER_IMAGE)$(ENDREGION HEADER_IMAGE) -->
 
-                
+                            <div
+                                class="category-post-details vertical-center category-post-left">
+                                <h3 class="nopadding">How Covid-19 creates huge learning disadvantages for HK students </h3>
 
-                <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
-                <a class="category-link linkfix" href="./blog/new-york-joins-california-as-millions-more-americans-are-ordered-to-stay-home.html">
-                    <div class="category-post-container">
+                                <div class="category-post-meta-container">
+                                    <span>By </span>
+                                    <span>Ernest Chan</span>
+                                    <span class="dot"></span>
+                                    <span>April 3rd, 2020</span>
+                                </div>
 
-                        <!-- $(REGION HEADER_IMAGE) -->
-                        <img class="mobileonly" src="./content/images/R2LOz4thantuSHST_HEADER.jpg">
-                        <!-- $(ENDREGION HEADER_IMAGE) -->
-
-                        <div
-                            class="category-post-details vertical-center ">
-                            <h3 class="nopadding">New York Joins California as Millions More Americans Are Ordered to Stay Home</h3>
-
-                            <div class="category-post-meta-container">
-                                <span>By </span>
-                                <span>Julie Bosman and Jesse McKinley</span>
-                                <span class="dot"></span>
-                                <span>March 21st, 2020</span>
+                                <!-- 100 specifies the maximum length of the preview -->
+                                <span class="category-post-content-preview">The recent outbreak of covid-19 this year in January has caused huge impacts in suppl(...)</span>
                             </div>
 
-                            <!-- 100 specifies the maximum length of the preview -->
-                            <span class="category-post-content-preview">CHICAGO — America plunged into a deeper state of disruption and paralysis on Friday a(...)</span>
+                            <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+
+                            <!-- $(REGION HEADER_IMAGE)$(ENDREGION HEADER_IMAGE) -->
+
                         </div>
 
-                        <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+                        <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
+                    </a>
 
-                        <!-- $(REGION HEADER_IMAGE) -->
-                        <img class="desktoponly" src="./content/images/R2LOz4thantuSHST_HEADER.jpg">
-                        <!-- $(ENDREGION HEADER_IMAGE) -->
+                    
 
-                    </div>
+                    <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
+                    <a class="category-link linkfix" href="./blog/how-currently-uninfected-countries-have-been-impacted-by-the-coronavirus-outbreak.html">
+                        <div class="category-post-container">
 
-                    <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
-                </a>
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="mobileonly" src="./content/images/LZv7z8I2vpWJXwme_HEADER.jpg">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
 
-                
+                            <div
+                                class="category-post-details vertical-center ">
+                                <h3 class="nopadding">How currently uninfected countries have been impacted by the coronavirus outbreak</h3>
 
-                <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
-                <a class="category-link linkfix" href="./blog/coronavirus-70-more-cases-on-japan-cruise-ship-as-china-infections-pass-68000.html">
-                    <div class="category-post-container">
+                                <div class="category-post-meta-container">
+                                    <span>By </span>
+                                    <span>Aurora Cen</span>
+                                    <span class="dot"></span>
+                                    <span>April 3rd, 2020</span>
+                                </div>
 
-                        <!-- $(REGION HEADER_IMAGE) -->
-                        <img class="mobileonly" src="./content/images/oedHQRrbD7haAo1y_HEADER.jpg">
-                        <!-- $(ENDREGION HEADER_IMAGE) -->
-
-                        <div
-                            class="category-post-details vertical-center ">
-                            <h3 class="nopadding">Coronavirus: 70 more cases on Japan cruise ship as China infections pass 68,000</h3>
-
-                            <div class="category-post-meta-container">
-                                <span>By </span>
-                                <span>Rebecca Ratcliffe</span>
-                                <span class="dot"></span>
-                                <span>February 16th, 2020</span>
+                                <!-- 100 specifies the maximum length of the preview -->
+                                <span class="category-post-content-preview">Coronavirus (Covid-19) originates from Wuhan, China, and has spread across Asia rapid(...)</span>
                             </div>
 
-                            <!-- 100 specifies the maximum length of the preview -->
-                            <span class="category-post-content-preview">A further 70 people on the Diamond Princess cruise ship quarantined in Japan have tes(...)</span>
+                            <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="desktoponly" src="./content/images/LZv7z8I2vpWJXwme_HEADER.jpg">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
+
                         </div>
 
-                        <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+                        <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
+                    </a>
 
-                        <!-- $(REGION HEADER_IMAGE) -->
-                        <img class="desktoponly" src="./content/images/oedHQRrbD7haAo1y_HEADER.jpg">
-                        <!-- $(ENDREGION HEADER_IMAGE) -->
+                    <!-- $(ENDREGION CATEGORY_POST_AREA) -->
 
-                    </div>
-
-                    <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
-                </a>
-
-                
-
-                <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
-                <a class="category-link linkfix" href="./blog/coronavirus-death-toll-leaps-in-chinas-hubei-province.html">
-                    <div class="category-post-container">
-
-                        <!-- $(REGION HEADER_IMAGE)$(ENDREGION HEADER_IMAGE) -->
-
-                        <div
-                            class="category-post-details vertical-center category-post-left">
-                            <h3 class="nopadding">Coronavirus death toll leaps in China's Hubei province</h3>
-
-                            <div class="category-post-meta-container">
-                                <span>By </span>
-                                <span>Winni Zhou, Dominique Patton</span>
-                                <span class="dot"></span>
-                                <span>February 13th, 2020</span>
-                            </div>
-
-                            <!-- 100 specifies the maximum length of the preview -->
-                            <span class="category-post-content-preview">BEIJING (Reuters) - The Chinese province at the epicenter of the coronavirus outbreak(...)</span>
-                        </div>
-
-                        <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
-
-                        <!-- $(REGION HEADER_IMAGE)$(ENDREGION HEADER_IMAGE) -->
-
-                    </div>
-
-                    <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
-                </a>
-
-                <!-- $(ENDREGION CATEGORY_POST_AREA) -->
+                </span>
 
                 <div id="category-pages">
 
@@ -411,17 +394,18 @@
                 <div class="spacer"></div>
 
                 <span id="footer-logo-container">
-                    <img alt="ISSIA Logo" id="footer-logo" src="./content/images/logo.png">
-                    <span>Copyright © 2020 ISSIA</span>
+                    <img alt="HSSC Logo" id="footer-hssc-logo" src="content/images/hsscLogo.png">
+                    <span>Copyright © 2020 HSSC</span>
                 </span>
             </footer>
 
             <!-- scripts -->
-            <script src="./scripts/global.js"></script>
-            <script src="./scripts/dateDisplay.js"></script>
-            <script src="./scripts/gallery.js"></script>
+            <script src="scripts/global.js"></script>
+            <script src="scripts/dateDisplay.js"></script>
+            <script src="scripts/blog.js"></script>
 
         </div>
+
 
         <footer id="footer-color-filler"></footer>
     </div>

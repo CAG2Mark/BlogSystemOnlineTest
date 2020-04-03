@@ -1,0 +1,461 @@
+<!-- !BLOG IGNORE -->
+
+<!DOCTYPE html>
+
+<html lang="en" id="html">
+
+<head>
+    <base href="../index.html" />
+
+    <meta name="selectedNavigationItem" content="BLOG">
+
+    <link rel="stylesheet" type="text/css" href="./styles/global.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/category.css">
+
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link rel="shortcut icon" href="./icon.ico" />
+
+    <title>All Posts - HSSC</title>
+
+    <!-- fonts -->
+
+    <!-- Couture is removed for copyright and performance reasons. A logo compiled using font bitmaps has instead been used. -->
+
+    <!-- Acumin via. typekit -->
+    <link rel="stylesheet" href="https://use.typekit.net/idx8cma.css">
+
+    <!-- Merriweather via. google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <div id="sidebar" class="pushy-closed mobileonly">
+        <ul id="navigation-side" class="navigation-list mobileonly">
+            <li>
+                <a href="./index.html">Home</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="./blog/blog.html">Articles</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="./clubs/clubs.html">Clubs</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="./about.html">About</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+
+        <span class="navigation-search-container" id="navigation-topbar-search-container">
+            <button class="navigation-search-button" data-target="navigation-sidebar-search-textbox">
+                <img src="./content/icons/baseline_search_black_36dp.png">
+            </button>
+
+            <form class="navigation-search-form" action="./search.html">
+                <input type="text" name="q" class="desktop-search-textbox" id="navigation-sidebar-search-textbox">
+                <input type="submit" class="hidden">
+            </form>
+        </span>
+    </div>
+
+    <div id="bodyarea">
+
+        <div id="topbar" class="top-desktop-hidden">
+
+            <a href="./index.html">
+                <img alt="HSSC Logo" class="mobileonly" id="topbar-hssc-logo" src="./content/images/hsscLogo.png">
+            </a>
+
+            <span class="mobileonly" id="hamburger-container">
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+            </span>
+
+            <ul id="topbar-nav" class="navigation-list desktoponly">
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="./blog/blog.html">Articles</a>
+                </li>
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="./clubs/clubs.html">Clubs</a></li>
+                <li>
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="./about.html">About</a></li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+
+            <span class="navigation-search-container desktoponly" id="navigation-topbar-search-container">
+                <button class="navigation-search-button" data-target="navigation-topbar-search-textbox">
+                    <img src="./content/icons/baseline_search_black_36dp.png">
+                </button>
+
+                <form class="navigation-search-form" action="./search.html">
+                    <input type="text" name="q" class="desktop-search-textbox" id="navigation-topbar-search-textbox">
+                    <input type="submit" class="hidden">
+                </form>
+            </span>
+
+        </div>
+
+        <div id="body-container">
+            <header>
+                <a href="index.html">
+                    <div id="logo-container">
+                        <img alt="HSSC Logo" class="no-select" src="./content/images/hsscLogo.png" id="header-logo">
+                        <img class="noSelect" id="header-logo-text" src="./content/images/hsscText.png">
+                    </div>
+                </a>
+                <div id="date-container">
+                </div>
+                <div id="navigation">
+                    <ul id="navigation-header" class="navigation-list">
+                        <li>
+                            <span class="nav-border"></span>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <span class="nav-border"></span>
+                            <a href="./blog/blog.html">Articles</a>
+                        </li>
+                        <li>
+                            <span class="nav-border"></span>
+                            <a href="./clubs/clubs.html">Clubs</a></li>
+                        <li>
+                        <li>
+                            <span class="nav-border"></span>
+                            <a href="./about.html">About</a></li>
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <span class="navigation-search-container">
+                        <button class="navigation-search-button" data-target="navigation-header-search-textbox">
+                            <img src="./content/icons/baseline_search_black_36dp.png">
+                        </button>
+
+                        <form class="navigation-search-form" action="./search.html">
+                            <input type="text" name="q" class="desktop-search-textbox"
+                                id="navigation-header-search-textbox">
+                            <input type="submit" class="hidden">
+                        </form>
+                    </span>
+                </div>
+
+                <div class="separator mobileonly"></div>
+            </header>
+
+            <!-- ALL CONTENT GOES HERE -->
+
+
+            <div class="wide-area clearfix">
+
+                <span class="serif-area">
+
+                    <h1 style="margin: 32px 0 16px 0">All Posts</h1>
+
+                    <!-- $(TEMPLATE CATEGORY_POST_TEMPLATE)$(ENDTEMPLATE CATEGORY_POST_TEMPLATE)-->
+
+                    <!-- Parameters: Post template name. -->
+
+                    <!-- $(REGION CATEGORY_POST_AREA CATEGORY_POST_TEMPLATE) -->
+
+                    
+
+                    <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
+                    <a class="category-link linkfix" href="./blog/voluntary-human-extinction.html">
+                        <div class="category-post-container">
+
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="mobileonly" src="./content/images/W3iuii1pVH5186eJ_HEADER.jpg">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                            <div
+                                class="category-post-details vertical-center ">
+                                <h3 class="nopadding">Voluntary Human Extinction</h3>
+
+                                <div class="category-post-meta-container">
+                                    <span>By </span>
+                                    <span>Yui Hang Cheung</span>
+                                    <span class="dot"></span>
+                                    <span>April 3rd, 2020</span>
+                                </div>
+
+                                <!-- 100 specifies the maximum length of the preview -->
+                                <span class="category-post-content-preview">It is easy to go beyond the parameters of permissible thought when we’re idle and pla(...)</span>
+                            </div>
+
+                            <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="desktoponly" src="./content/images/W3iuii1pVH5186eJ_HEADER.jpg">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                        </div>
+
+                        <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
+                    </a>
+
+                    
+
+                    <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
+                    <a class="category-link linkfix" href="./blog/should-the-law-require-people-to-vote-in-the-general-election.html">
+                        <div class="category-post-container">
+
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="mobileonly" src="./content/images/2WhlmtFlXxfWs9YW_HEADER.jpg">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                            <div
+                                class="category-post-details vertical-center ">
+                                <h3 class="nopadding">Should the Law Require People to Vote in the General Election?</h3>
+
+                                <div class="category-post-meta-container">
+                                    <span>By </span>
+                                    <span>Vania Chow</span>
+                                    <span class="dot"></span>
+                                    <span>April 3rd, 2020</span>
+                                </div>
+
+                                <!-- 100 specifies the maximum length of the preview -->
+                                <span class="category-post-content-preview">Imagine being forced to choose a restaurant when you have absolutely no preference; w(...)</span>
+                            </div>
+
+                            <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="desktoponly" src="./content/images/2WhlmtFlXxfWs9YW_HEADER.jpg">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                        </div>
+
+                        <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
+                    </a>
+
+                    
+
+                    <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
+                    <a class="category-link linkfix" href="./blog/justification-of-revolution.html">
+                        <div class="category-post-container">
+
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="mobileonly" src="./content/images/nKBScGqcivS7y3Dk_HEADER.png">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                            <div
+                                class="category-post-details vertical-center ">
+                                <h3 class="nopadding">Justification of Revolution</h3>
+
+                                <div class="category-post-meta-container">
+                                    <span>By </span>
+                                    <span>Solomon Lam</span>
+                                    <span class="dot"></span>
+                                    <span>April 3rd, 2020</span>
+                                </div>
+
+                                <!-- 100 specifies the maximum length of the preview -->
+                                <span class="category-post-content-preview">The world today is a much freer world than that of classical antiquity. While many st(...)</span>
+                            </div>
+
+                            <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="desktoponly" src="./content/images/nKBScGqcivS7y3Dk_HEADER.png">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                        </div>
+
+                        <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
+                    </a>
+
+                    
+
+                    <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
+                    <a class="category-link linkfix" href="./blog/the-gulabi-gang.html">
+                        <div class="category-post-container">
+
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="mobileonly" src="./content/images/FrJD3LgJSTVkB3UM_HEADER.jpg">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                            <div
+                                class="category-post-details vertical-center ">
+                                <h3 class="nopadding">The Gulabi Gang</h3>
+
+                                <div class="category-post-meta-container">
+                                    <span>By </span>
+                                    <span>Belle Ho</span>
+                                    <span class="dot"></span>
+                                    <span>April 3rd, 2020</span>
+                                </div>
+
+                                <!-- 100 specifies the maximum length of the preview -->
+                                <span class="category-post-content-preview">For the average Indian woman who suffers from patriarchal norm, a crippled justice sy(...)</span>
+                            </div>
+
+                            <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="desktoponly" src="./content/images/FrJD3LgJSTVkB3UM_HEADER.jpg">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                        </div>
+
+                        <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
+                    </a>
+
+                    
+
+                    <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
+                    <a class="category-link linkfix" href="./blog/grumpy-about-globalization.html">
+                        <div class="category-post-container">
+
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="mobileonly" src="./content/images/fqFZouuapQqek3re_HEADER.jpg">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                            <div
+                                class="category-post-details vertical-center ">
+                                <h3 class="nopadding">Grumpy about Globalization?</h3>
+
+                                <div class="category-post-meta-container">
+                                    <span>By </span>
+                                    <span>Evan Yang</span>
+                                    <span class="dot"></span>
+                                    <span>April 3rd, 2020</span>
+                                </div>
+
+                                <!-- 100 specifies the maximum length of the preview -->
+                                <span class="category-post-content-preview">How shall we usher in the new decade of 2020? With a plane shot down over Iran, a lon(...)</span>
+                            </div>
+
+                            <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="desktoponly" src="./content/images/fqFZouuapQqek3re_HEADER.jpg">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                        </div>
+
+                        <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
+                    </a>
+
+                    
+
+                    <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
+                    <a class="category-link linkfix" href="./blog/looking-back-on-the-2010s-a-decade-of-digitalisation-and-its-impact.html">
+                        <div class="category-post-container">
+
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="mobileonly" src="./content/images/IMXgtax20QFnTkmK_HEADER.jpg">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                            <div
+                                class="category-post-details vertical-center ">
+                                <h3 class="nopadding">Looking Back on The 2010s: A Decade of Digitalisation and its Impact</h3>
+
+                                <div class="category-post-meta-container">
+                                    <span>By </span>
+                                    <span>Sophia Zhang</span>
+                                    <span class="dot"></span>
+                                    <span>April 3rd, 2020</span>
+                                </div>
+
+                                <!-- 100 specifies the maximum length of the preview -->
+                                <span class="category-post-content-preview">It is difficult to believe that 10 years ago, Disney Channel had captured the hearts (...)</span>
+                            </div>
+
+                            <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+
+                            <!-- $(REGION HEADER_IMAGE) -->
+                            <img class="desktoponly" src="./content/images/IMXgtax20QFnTkmK_HEADER.jpg">
+                            <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                        </div>
+
+                        <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
+                    </a>
+
+                    <!-- $(ENDREGION CATEGORY_POST_AREA) -->
+
+                </span>
+
+                <div id="category-pages">
+
+
+                    <!-- $(TEMPLATE CATEGORY_PAGES_TEMPLATE_SELECTED)$(ENDTEMPLATE CATEGORY_PAGES_TEMPLATE_SELECTED) -->
+
+
+                    <!-- $(TEMPLATE CATEGORY_PAGES_TEMPLATE)$(ENDTEMPLATE CATEGORY_PAGES_TEMPLATE) -->
+
+
+                    <!-- Parameters: Indicators to display, Indicator template name, selected indicator template name.-->
+
+                    <!-- $(REGION CATEGORY_PAGES_AREA 5 CATEGORY_PAGES_TEMPLATE CATEGORY_PAGES_TEMPLATE_SELECTED) -->
+
+                    
+
+                    <a href="./blog/all.html" class="category-pages-indicator linkfix">
+                        <span class="category-pages-indicator-text">1</a>
+                    </a>
+
+
+                    
+
+                    <div class="category-pages-indicator category-pages-indicator-selected">
+                        <span class="category-pages-indicator-text">2</span>
+                    </div>
+
+                    <!-- $(ENDREGION CATEGORY_PAGES_AREA)-->
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <footer>
+                <div class="spacer"></div>
+
+                <span id="footer-logo-container">
+                    <img alt="HSSC Logo" id="footer-hssc-logo" src="content/images/hsscLogo.png">
+                    <span>Copyright © 2020 HSSC</span>
+                </span>
+            </footer>
+
+            <!-- scripts -->
+            <script src="scripts/global.js"></script>
+            <script src="scripts/dateDisplay.js"></script>
+            <script src="scripts/blog.js"></script>
+
+        </div>
+
+
+        <footer id="footer-color-filler"></footer>
+    </div>
+</body>
+
+</html>

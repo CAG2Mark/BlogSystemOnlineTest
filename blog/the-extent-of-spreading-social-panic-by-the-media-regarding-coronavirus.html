@@ -5,15 +5,13 @@
 <html lang="en" id="html">
 
 <head>
-
     <base href="../index.html" />
 
     <meta name="selectedNavigationItem" content="BLOG">
+
     <link rel="stylesheet" type="text/css" href="./styles/global.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/home.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/category.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/blog.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/blog.css">
+
     <link rel="shortcut icon" href="./icon.ico" />
 
 
@@ -25,14 +23,13 @@
     <meta name="og:description" content="Recently, regarding the recent outbreak of the new coronavirus COVID-2019 in Wuhan Province China, we can see that the numbers of infection (...)">
 
     <!-- $(REGION HEADER_IMAGE) -->
-    <meta property="og:image" content="./content/images/izQHh8J3vVWiRnxm_HEADER.png">
+    <meta property="og:image" content="./content/images/17SXug6hYC7sZb9s_HEADER.png">
     <!-- $(ENDREGION HEADER_IMAGE) -->
     <meta name="twitter:card" content="summary_large_image">
 
-
-
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+
     <title>The extent of spreading social panic by the media regarding Coronavirus</title>
 
     <!-- fonts -->
@@ -41,6 +38,10 @@
 
     <!-- Acumin via. typekit -->
     <link rel="stylesheet" href="https://use.typekit.net/idx8cma.css">
+
+    <!-- Merriweather via. google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 
 
 </head>
@@ -56,6 +57,10 @@
             </li>
             <li>
                 <a href="./blog/blog.html">Articles</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="./clubs/clubs.html">Clubs</a>
                 <span class="nav-border"></span>
             </li>
             <li>
@@ -84,7 +89,7 @@
         <div id="topbar" class="top-desktop-hidden">
 
             <a href="./index.html">
-                <img alt="ISSIA Logo" class="mobileonly" id="topbar-logo" src="./content/images/logo.png">
+                <img alt="HSSC Logo" class="mobileonly" id="topbar-hssc-logo" src="./content/images/hsscLogo.png">
             </a>
 
             <span class="mobileonly" id="hamburger-container">
@@ -102,7 +107,10 @@
                     <span class="nav-border"></span>
                     <a href="./blog/blog.html">Articles</a>
                 </li>
-
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="./clubs/clubs.html">Clubs</a></li>
+                <li>
                 <li>
                     <span class="nav-border"></span>
                     <a href="./about.html">About</a></li>
@@ -128,7 +136,8 @@
             <header>
                 <a href="index.html">
                     <div id="logo-container">
-                        <img alt="ISSIA Logo" class="no-select" src="./content/images/logo.png" id="header-logo">
+                        <img alt="HSSC Logo" class="no-select" src="./content/images/hsscLogo.png" id="header-logo">
+                        <img class="noSelect" id="header-logo-text" src="./content/images/hsscText.png">
                     </div>
                 </a>
                 <div id="date-container">
@@ -143,6 +152,10 @@
                             <span class="nav-border"></span>
                             <a href="./blog/blog.html">Articles</a>
                         </li>
+                        <li>
+                            <span class="nav-border"></span>
+                            <a href="./clubs/clubs.html">Clubs</a></li>
+                        <li>
                         <li>
                             <span class="nav-border"></span>
                             <a href="./about.html">About</a></li>
@@ -167,7 +180,6 @@
                 <div class="separator mobileonly"></div>
             </header>
 
-
             <!-- ALL CONTENT GOES HERE -->
 
             <div class="wide-area">
@@ -184,31 +196,35 @@
 
                 </div>
 
-                <h1 class="headline">The extent of spreading social panic by the media regarding Coronavirus</h1>
+                <span class="serif-area">
 
-                <!-- $(REGION HEADER_IMAGE) -->
-                <img src="./content/images/izQHh8J3vVWiRnxm_HEADER.png">
-                <p class="blog-post-image-caption">Image via New York Times</p>
-                <!-- $(ENDREGION HEADER_IMAGE) -->
+                    <h1 class="headline">The extent of spreading social panic by the media regarding Coronavirus</h1>
+
+                    <!-- $(REGION HEADER_IMAGE) -->
+                    <img src="./content/images/17SXug6hYC7sZb9s_HEADER.png">
+                    <p class="blog-post-image-caption"></p>
+                    <!-- $(ENDREGION HEADER_IMAGE) -->
 
 
-                <div class="blog-post-data-container" id="blog-post-author-container">
-                    <span>By </span>
-                    <span>Charlton Sullivan</span>
-                </div>
+                    <div class="blog-post-data-container" id="blog-post-author-container">
+                        <span>By </span>
+                        <span>Charlton Sullivan</span>
+                    </div>
 
-                <div class="blog-post-data-container" id="blog-post-date-container">
-                    <span>Published on </span>
-                    <span>March 22nd, 2020</span>
-                </div>
+                    <div class="blog-post-data-container" id="blog-post-date-container">
+                        <span>Published on </span>
+                        <span>April 3rd, 2020</span>
+                    </div>
 
-                <div style="height: 6px"></div>
+                    <div style="height: 6px"></div>
 
-                <div class="separator"></div>
+                    <div class="separator"></div>
+
+                </span>
             </div>
 
-            <div class="narrow-area-left" id="blog-post-content-area">
-                <p><span style="font-size: 20px; font-weight: bold; ">Recently, regarding the recent outbreak of the new coronavirus COVID-2019 in Wuhan Province China, we can see that the numbers of infection grows rapidly day after day. The information can be instantly received by many individuals due to the increased accessibility of the Internet.  However, social media has played a major role in fear mongering, serving as an echo chamber for exaggeration and misinformation. In fact, the fallout of the panic may actually be doing more damage than the virus itself.</span></p><p><span style="font-size: 20px; font-weight: bold; "></span><img style="max-width: 100%" src="content/images/izQHh8J3vVWiRnxm_izQHh8J3vVWiRnxm_Image1.png" /></p><p><span style="font-size: 20px; font-weight: bold; ">Image via New York Times</span></p><p><span style="font-size: 20px; font-weight: bold; "></span></p><p><span style="font-size: 20px; font-weight: bold; ">“Fear spreads faster than infection”</span></p><p><span style="font-size: 20px; ">The spreading of fear in itself through the internet resembles closely to that of the spreading of a viral epidemic. As the Internet spreads information and news at an extremely rapid pace, we can all instantly gather the most updated pieces of news articles, footages, statistics, photos in less than a second. This is where the term “24/7 news” originates from. 24/7 news combined with the spreading of misinformation and misinterpretation however only worsened the current situation as they are spread in an extremely rapid pace. Once people receive the information, they tend to share them in social media platforms or forward them to large group chats, this creates a chain effect where more people will receive them and further sharing and forwarding them to a larger and bigger platform where more people will receive the updates, resulting in the worsening of the seriousness of the situation in further raising fear. </span></p><p><span style="font-size: 20px; "></span></p><p><span style="font-size: 20px; "> Dr Lee Riley, professor of infectious diseases and vaccinology at the University of California, pointed out that common-or-garden influenza was far more deadly. The spreading of fake news, misinformation plays a major role in further worsening this situation. A lot of news titles tend to be clickbait in order to attract media attention. News articles tend to </span><span style="font-size: 20px; font-weight: bold; ">sensationalize death tolls while leaving out other critical information such as recovery rates.</span><span style="font-size: 20px; "> Despite the seriousness of </span><span style="font-size: 20px; ">COVID-19</span><span style="font-size: 20px; ">, due to its high transmission rate as well as a 2 week incubation period when there are no obvious symptoms. It is also a newly discovered virus where there is currently no vaccine or cure to it. News sources can help raise awareness and address the issues of the epidemic, where people can be acknowledged and prevent the spreading of disease at such a rapid rate such as coming up with precautionary and preventive measures. The types of news that should be put in order for the public to be seen should be more balanced and well-rounded, news platforms should also report </span><span style="font-size: 20px; font-weight: bold; ">the recovery rates more often</span><span style="font-size: 20px; ">.</span></p><p><span style="font-size: 20px; "></span></p><p><span style="font-size: 20px; "> According to research, Chinese Centres of Disease Control looked at more than 44,000 confirmed cases of the disease and 81% develop mild symptoms and only 5% are in critical condition. As of Feb 22nd 9:25AM from SCMP, there are a total of 77,767 cases, 20,856 have been recovered and 2,360 deaths this if were to be put in comparison to Ebola which has ended, there are a total of 28,600 cases and 11,325 deaths from 2014 to 8th May 2016 (information from Centres for disease control and prevention). In addition, the second month of the Ebola outbreak on March 23, 2014, with 49 confirmed cases and 29 deaths, having a fatality rate of 60%. Despite COVID-2019 having a greater number of cases, there is only a fatality rate of 3% whereas the now ended Ebola has a fatality rate of 40% showing more severe symptoms. </span></p><p><span style="font-size: 20px; "></span></p><p><span style="font-size: 20px; "></span><img style="max-width: 100%" src="content/images/izQHh8J3vVWiRnxm_izQHh8J3vVWiRnxm_Image2.png" /></p><p><span style="font-size: 20px; ">As of Feb 22nd 9:25AM from SCMP</span></p><p><span style="font-size: 20px; "></span></p><p><span style="font-size: 20px; ">Social media is infamously known for the spreading of hoaxes and the repackaging of old stories where people tend to mostly develop their fear from it. Not only that, criticisms of the Chinese people and xenophobic behavours are also developed by many people around the globe. Recently there was a viral video of a Chinese woman enjoying the “Bat Soup” and resulted in serious backlashes and criticism and putting the blame on people for spreading the virus, however the picture was actually taken in Palau, an archipelago in the western Pacific, in 2016 and it was not taken in Wuhan. Secondly regarding Corona being a “biological weapon” developed by China which was from The Washington Times was also later on debunked by BBC as there was no evidence of the claim, however it was already too late as the articles have been widely shared and seen by over a million audience.</span></p><p><span style="font-size: 20px; "></span></p><p><span style="font-size: 20px; "></span><img style="max-width: 100%" src="content/images/izQHh8J3vVWiRnxm_izQHh8J3vVWiRnxm_Image3.png" /></p><p><span style="font-size: 20px; ">Many shoppers have decided to buy goods in bulk. Photo: Nora Tam</span></p><p><span style="font-size: 20px; font-weight: bold; "></span></p><p><span style="font-size: 20px; ">The role of social media and 24/7 news have had a detrimental impact regarding on worsening the situation of the already serious epidemic as xenophobia and Chinese racism and shortages in supplies such as rice, tissue paper and mask can be seen all around in major places such as Hong Kong, United States, Japan etc. Many people tend to “buy goods in bulk”, buying more than enough to supply themselves. Resulting in the rapid increase in price as there is a high demand but shortage in supply. </span></p><p><span style="font-size: 20px; "></span></p><p><span style="font-size: 20px; "></span><img style="max-width: 100%" src="content/images/izQHh8J3vVWiRnxm_izQHh8J3vVWiRnxm_Image4.png" /></p><p><span style="font-size: 20px; ">“There is absolutely no need to panic buy. We have always worked to ensure a stable supply of food and all these years, throughout all sorts of big events, we have never had a shortage,” Thomas Ng Wing-yan, chairman of the Hong Kong Food Council, told a press conference. ~SCMP article </span></p><p><span style="font-size: 20px; font-weight: bold; "></span></p><p><span style="font-size: 20px; font-weight: bold; ">In conclusion, the corona virus should be seen as a serious threat as it has been declared a Public Health Emergency of International Concern and the fact that it transmits rapidly at an extremely rapid pace. However the general public should be more careful and alert when receiving information from the internet as they are known for further amplifying the current serious situation and as it has such a huge impact on the general public due to misinformation, partial information, biases, fake news.</span></p><p><span style="font-size: 20px; font-weight: bold; "></span></p><p><span style="font-size: 20px; font-weight: bold; ">Sources</span></p><p><a target="_blank" href="https://www.bbc.com/news/technology-51510196"><span style="font-size: 20px; font-weight: bold; text-decoration: underline; ">https://www.bbc.com/news/technology-51510196</span></a><span style="font-size: 20px; font-weight: bold; "> </span></p><p><a target="_blank" href="https://www.scmp.com/week-asia/opinion/article/3048689/how-fake-news-coronavirus-turning-global-epidemic"><span style="font-size: 20px; font-weight: bold; text-decoration: underline; ">https://www.scmp.com/week-asia/opinion/article/3048689/how-fake-news-coronavirus-turning-global-epidemic</span></a><span style="font-size: 20px; font-weight: bold; "> </span></p><p><a target="_blank" href="https://www.scmp.com/news/hong-kong/health-environment/article/3049237/coronavirus-rice-toilet-paper-and-dried-goods-fly"><span style="font-size: 20px; font-weight: bold; text-decoration: underline; ">https://www.scmp.com/news/hong-kong/health-environment/article/3049237/coronavirus-rice-toilet-paper-and-dried-goods-fly</span></a><span style="font-size: 20px; font-weight: bold; "> </span></p><p><a target="_blank" href="https://www.bbc.com/news/technology-51510196"><span style="font-size: 20px; font-weight: bold; text-decoration: underline; ">https://www.bbc.com/news/technology-51510196</span></a><span style="font-size: 20px; font-weight: bold; "> </span></p><p><a target="_blank" href="https://www.cdc.gov/vhf/ebola/history/2014-2016-outbreak/index.html"><span style="font-size: 20px; font-weight: bold; text-decoration: underline; ">https://www.cdc.gov/vhf/ebola/history/2014-2016-outbreak/index.html</span></a><span style="font-size: 20px; font-weight: bold; "> </span></p>
+            <div class="narrow-area-left serif-area" id="blog-post-content-area">
+                <p><span style="font-size: 18px; font-weight: bold; ">Recently, regarding the recent outbreak of the new coronavirus COVID-2019 in Wuhan Province China, we can see that the numbers of infection grows rapidly day after day. The information can be instantly received by many individuals due to the increased accessibility of the Internet.  However, social media has played a major role in fear mongering, serving as an echo chamber for exaggeration and misinformation. In fact, the fallout of the panic may actually be doing more damage than the virus itself.</span></p><p><span style="font-size: 18px; font-weight: bold; "></span><img style="max-width: 100%" src="content/images/17SXug6hYC7sZb9s_17SXug6hYC7sZb9s_Image1-0.png" /></p><p><span style="font-size: 18px; font-weight: bold; ">Image via New York Times</span></p><p><span style="font-size: 18px; font-weight: bold; "></span></p><p><span style="font-size: 18px; font-weight: bold; ">“Fear spreads faster than infection”</span></p><p><span style="font-size: 18px; ">The spreading of fear in itself through the internet resembles closely to that of the spreading of a viral epidemic. As the Internet spreads information and news at an extremely rapid pace, we can all instantly gather the most updated pieces of news articles, footages, statistics, photos in less than a second. This is where the term “24/7 news” originates from. 24/7 news combined with the spreading of misinformation and misinterpretation however only worsened the current situation as they are spread in an extremely rapid pace. Once people receive the information, they tend to share them in social media platforms or forward them to large group chats, this creates a chain effect where more people will receive them and further sharing and forwarding them to a larger and bigger platform where more people will receive the updates, resulting in the worsening of the seriousness of the situation in further raising fear. </span></p><p><span style="font-size: 18px; "></span></p><p><span style="font-size: 18px; "> Dr Lee Riley, professor of infectious diseases and vaccinology at the University of California, pointed out that common-or-garden influenza was far more deadly. The spreading of fake news, misinformation plays a major role in further worsening this situation. A lot of news titles tend to be clickbait in order to attract media attention. News articles tend to </span><span style="font-size: 18px; font-weight: bold; ">sensationalize death tolls while leaving out other critical information such as recovery rates.</span><span style="font-size: 18px; "> Despite the seriousness of </span><span style="font-size: 18px; ">COVID-19</span><span style="font-size: 18px; ">, due to its high transmission rate as well as a 2 week incubation period when there are no obvious symptoms. It is also a newly discovered virus where there is currently no vaccine or cure to it. News sources can help raise awareness and address the issues of the epidemic, where people can be acknowledged and prevent the spreading of disease at such a rapid rate such as coming up with precautionary and preventive measures. The types of news that should be put in order for the public to be seen should be more balanced and well-rounded, news platforms should also report </span><span style="font-size: 18px; font-weight: bold; ">the recovery rates more often</span><span style="font-size: 18px; ">.</span></p><p><span style="font-size: 18px; "></span></p><p><span style="font-size: 18px; "> According to research, Chinese Centres of Disease Control looked at more than 44,000 confirmed cases of the disease and 81% develop mild symptoms and only 5% are in critical condition. As of Feb 22nd 9:25AM from SCMP, there are a total of 77,767 cases, 20,856 have been recovered and 2,360 deaths this if were to be put in comparison to Ebola which has ended, there are a total of 28,600 cases and 11,325 deaths from 2014 to 8th May 2016 (information from Centres for disease control and prevention). In addition, the second month of the Ebola outbreak on March 23, 2014, with 49 confirmed cases and 29 deaths, having a fatality rate of 60%. Despite COVID-2019 having a greater number of cases, there is only a fatality rate of 3% whereas the now ended Ebola has a fatality rate of 40% showing more severe symptoms. </span></p><p><span style="font-size: 18px; "></span><img style="max-width: 100%" src="content/images/17SXug6hYC7sZb9s_17SXug6hYC7sZb9s_Image2-0.png" /></p><p><span style="font-size: 18px; ">As of Feb 22nd 9:25AM from SCMP</span></p><p><span style="font-size: 18px; "></span></p><p><span style="font-size: 18px; ">Social media is infamously known for the spreading of hoaxes and the repackaging of old stories where people tend to mostly develop their fear from it. Not only that, criticisms of the Chinese people and xenophobic behavours are also developed by many people around the globe. Recently there was a viral video of a Chinese woman enjoying the “Bat Soup” and resulted in serious backlashes and criticism and putting the blame on people for spreading the virus, however the picture was actually taken in Palau, an archipelago in the western Pacific, in 2016 and it was not taken in Wuhan. Secondly regarding Corona being a “biological weapon” developed by China which was from The Washington Times was also later on debunked by BBC as there was no evidence of the claim, however it was already too late as the articles have been widely shared and seen by over a million audience.</span></p><p><span style="font-size: 18px; "></span></p><p><span style="font-size: 18px; "></span><img style="max-width: 100%" src="content/images/17SXug6hYC7sZb9s_17SXug6hYC7sZb9s_Image3-0.png" /></p><p><span style="font-size: 18px; ">Many shoppers have decided to buy goods in bulk. Photo: Nora Tam</span></p><p><span style="font-size: 18px; font-weight: bold; "></span></p><p><span style="font-size: 18px; ">The role of social media and 24/7 news have had a detrimental impact regarding on worsening the situation of the already serious epidemic as xenophobia and Chinese racism and shortages in supplies such as rice, tissue paper and mask can be seen all around in major places such as Hong Kong, United States, Japan etc. Many people tend to “buy goods in bulk”, buying more than enough to supply themselves. Resulting in the rapid increase in price as there is a high demand but shortage in supply. </span></p><p><span style="font-size: 18px; "></span></p><p><span style="font-size: 18px; "></span><img style="max-width: 100%" src="content/images/17SXug6hYC7sZb9s_17SXug6hYC7sZb9s_Image4-0.png" /></p><p><span style="font-size: 18px; ">“There is absolutely no need to panic buy. We have always worked to ensure a stable supply of food and all these years, throughout all sorts of big events, we have never had a shortage,” Thomas Ng Wing-yan, chairman of the Hong Kong Food Council, told a press conference. ~SCMP article </span></p><p><span style="font-size: 18px; font-weight: bold; "></span></p><p><span style="font-size: 18px; font-weight: bold; ">In conclusion, the corona virus should be seen as a serious threat as it has been declared a Public Health Emergency of International Concern and the fact that it transmits rapidly at an extremely rapid pace. However the general public should be more careful and alert when receiving information from the internet as they are known for further amplifying the current serious situation and as it has such a huge impact on the general public due to misinformation, partial information, biases, fake news.</span></p><p></p><p><span style="font-size: 18px; font-weight: bold; "></span></p><p><span style="font-size: 18px; font-weight: bold; ">Sources</span></p><p><a target="_blank" href="https://www.bbc.com/news/technology-51510196"><span style="font-size: 18px; font-weight: bold; text-decoration: underline; ">https://www.bbc.com/news/technology-51510196</span></a><span style="font-size: 18px; font-weight: bold; "> </span></p><p><a target="_blank" href="https://www.scmp.com/week-asia/opinion/article/3048689/how-fake-news-coronavirus-turning-global-epidemic"><span style="font-size: 18px; font-weight: bold; text-decoration: underline; ">https://www.scmp.com/week-asia/opinion/article/3048689/how-fake-news-coronavirus-turning-global-epidemic</span></a><span style="font-size: 18px; font-weight: bold; "> </span></p><p><a target="_blank" href="https://www.scmp.com/news/hong-kong/health-environment/article/3049237/coronavirus-rice-toilet-paper-and-dried-goods-fly"><span style="font-size: 18px; font-weight: bold; text-decoration: underline; ">https://www.scmp.com/news/hong-kong/health-environment/article/3049237/coronavirus-rice-toilet-paper-and-dried-goods-fly</span></a><span style="font-size: 18px; font-weight: bold; "> </span></p><p><a target="_blank" href="https://www.bbc.com/news/technology-51510196"><span style="font-size: 18px; font-weight: bold; text-decoration: underline; ">https://www.bbc.com/news/technology-51510196</span></a><span style="font-size: 18px; font-weight: bold; "> </span></p><p><a target="_blank" href="https://www.cdc.gov/vhf/ebola/history/2014-2016-outbreak/index.html"><span style="font-size: 18px; font-weight: bold; text-decoration: underline; ">https://www.cdc.gov/vhf/ebola/history/2014-2016-outbreak/index.html</span></a><span style="font-size: 18px; font-weight: bold; "> </span></p>
 
                 <div class="blog-categories-container" style="margin-top: 12px; margin-bottom: 12px;">
 
@@ -240,19 +256,19 @@
                     var disqus_config = function () {
 
                         this.page.url = window.location
-                        .href; // Replace PAGE_URL with your page's canonical URL variable
+                            .href; // Replace PAGE_URL with your page's canonical URL variable
 
                         // TEST URL
                         //this.page.url = "https://hsscstc.github.io/blog/test.html"; 
 
                         this.page.identifier =
-                            "izQHh8J3vVWiRnxm"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                            "17SXug6hYC7sZb9s"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                     };
 
                     (function () { // DON'T EDIT BELOW THIS LINE
                         var d = document,
                             s = d.createElement('script');
-                        s.src = 'https://issia.disqus.com/embed.js';
+                        s.src = 'https://hssc-1.disqus.com/embed.js';
                         s.setAttribute('data-timestamp', +new Date());
                         (d.head || d.body).appendChild(s);
                     })();
@@ -265,17 +281,18 @@
                 <div class="spacer"></div>
 
                 <span id="footer-logo-container">
-                    <img alt="ISSIA Logo" id="footer-logo" src="./content/images/logo.png">
-                    <span>Copyright © 2020 ISSIA</span>
+                    <img alt="HSSC Logo" id="footer-hssc-logo" src="./content/images/hsscLogo.png">
+                    <span>Copyright © 2020 HSSC</span>
                 </span>
             </footer>
 
             <!-- scripts -->
-            <script src="./scripts/global.js"></script>
-            <script src="./scripts/dateDisplay.js"></script>
-            <script src="./scripts/gallery.js"></script>
+            <script src="scripts/global.js"></script>
+            <script src="scripts/dateDisplay.js"></script>
+            <script src="scripts/blog.js"></script>
 
         </div>
+
 
         <footer id="footer-color-filler"></footer>
     </div>

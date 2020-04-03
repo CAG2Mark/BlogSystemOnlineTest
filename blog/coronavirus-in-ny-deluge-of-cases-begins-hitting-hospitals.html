@@ -5,16 +5,12 @@
 <html lang="en" id="html">
 
 <head>
-
     <base href="../index.html" />
 
     <meta name="selectedNavigationItem" content="BLOG">
+
     <link rel="stylesheet" type="text/css" href="./styles/global.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/home.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/category.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/blog.css" />
-    <link rel="shortcut icon" href="./icon.ico" />
+    <link rel="stylesheet" type="text/css" href="./styles/blog.css">
 
 
     <!-- SOCIAL EMBEDS -->
@@ -29,10 +25,9 @@
     <!-- $(ENDREGION HEADER_IMAGE) -->
     <meta name="twitter:card" content="summary_large_image">
 
-
-
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+
     <title>Coronavirus in N.Y.: ‘Deluge’ of Cases Begins Hitting Hospitals</title>
 
     <!-- fonts -->
@@ -41,6 +36,10 @@
 
     <!-- Acumin via. typekit -->
     <link rel="stylesheet" href="https://use.typekit.net/idx8cma.css">
+
+    <!-- Merriweather via. google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 
 
 </head>
@@ -56,6 +55,10 @@
             </li>
             <li>
                 <a href="./blog/blog.html">Articles</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="./clubs/clubs.html">Clubs</a>
                 <span class="nav-border"></span>
             </li>
             <li>
@@ -84,7 +87,7 @@
         <div id="topbar" class="top-desktop-hidden">
 
             <a href="./index.html">
-                <img alt="ISSIA Logo" class="mobileonly" id="topbar-logo" src="./content/images/logo.png">
+                <img alt="HSSC Logo" class="mobileonly" id="topbar-hssc-logo" src="./content/images/hsscLogo.png">
             </a>
 
             <span class="mobileonly" id="hamburger-container">
@@ -102,7 +105,10 @@
                     <span class="nav-border"></span>
                     <a href="./blog/blog.html">Articles</a>
                 </li>
-
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="./clubs/clubs.html">Clubs</a></li>
+                <li>
                 <li>
                     <span class="nav-border"></span>
                     <a href="./about.html">About</a></li>
@@ -128,7 +134,8 @@
             <header>
                 <a href="index.html">
                     <div id="logo-container">
-                        <img alt="ISSIA Logo" class="no-select" src="./content/images/logo.png" id="header-logo">
+                        <img alt="HSSC Logo" class="no-select" src="./content/images/hsscLogo.png" id="header-logo">
+                        <img class="noSelect" id="header-logo-text" src="./content/images/hsscText.png">
                     </div>
                 </a>
                 <div id="date-container">
@@ -143,6 +150,10 @@
                             <span class="nav-border"></span>
                             <a href="./blog/blog.html">Articles</a>
                         </li>
+                        <li>
+                            <span class="nav-border"></span>
+                            <a href="./clubs/clubs.html">Clubs</a></li>
+                        <li>
                         <li>
                             <span class="nav-border"></span>
                             <a href="./about.html">About</a></li>
@@ -167,7 +178,6 @@
                 <div class="separator mobileonly"></div>
             </header>
 
-
             <!-- ALL CONTENT GOES HERE -->
 
             <div class="wide-area">
@@ -184,31 +194,35 @@
 
                 </div>
 
-                <h1 class="headline">Coronavirus in N.Y.: ‘Deluge’ of Cases Begins Hitting Hospitals</h1>
+                <span class="serif-area">
 
-                <!-- $(REGION HEADER_IMAGE) -->
-                <img src="./content/images/z2a3n0gDg7INMRn6_HEADER.jpg">
-                <p class="blog-post-image-caption">People waited outside Elmhurst Hospital Center in Queens on Friday to be tested for the coronavirus.</p>
-                <!-- $(ENDREGION HEADER_IMAGE) -->
+                    <h1 class="headline">Coronavirus in N.Y.: ‘Deluge’ of Cases Begins Hitting Hospitals</h1>
+
+                    <!-- $(REGION HEADER_IMAGE) -->
+                    <img src="./content/images/z2a3n0gDg7INMRn6_HEADER.jpg">
+                    <p class="blog-post-image-caption">People waited outside Elmhurst Hospital Center in Queens on Friday to be tested for the coronavirus.</p>
+                    <!-- $(ENDREGION HEADER_IMAGE) -->
 
 
-                <div class="blog-post-data-container" id="blog-post-author-container">
-                    <span>By </span>
-                    <span>Brian M. Rosenthal, Joseph Goldstein and Michael Rothfeld</span>
-                </div>
+                    <div class="blog-post-data-container" id="blog-post-author-container">
+                        <span>By </span>
+                        <span>Brian M. Rosenthal, Joseph Goldstein and Michael Rothfeld</span>
+                    </div>
 
-                <div class="blog-post-data-container" id="blog-post-date-container">
-                    <span>Published on </span>
-                    <span>March 21st, 2020</span>
-                </div>
+                    <div class="blog-post-data-container" id="blog-post-date-container">
+                        <span>Published on </span>
+                        <span>March 21st, 2020</span>
+                    </div>
 
-                <div style="height: 6px"></div>
+                    <div style="height: 6px"></div>
 
-                <div class="separator"></div>
+                    <div class="separator"></div>
+
+                </span>
             </div>
 
-            <div class="narrow-area-left" id="blog-post-content-area">
-                <p><span style="font-size: 20px; ">New York State’s long-feared surge of coronavirus cases has begun, thrusting the medical system toward a crisis point.</span></p><p><span style="font-size: 20px; ">In a startlingly quick ascent, officials reported on Friday that the state was closing in on 8,000 positive tests, about half the cases in the country. The number was 10 times higher than what was reported earlier in the week.</span></p><p><span style="font-size: 20px; ">In the Bronx, doctors at Lincoln Medical and Mental Health Center say they have only a few remaining ventilators for patients who need them to breathe. In Brooklyn, doctors at Kings County Hospital Center say they are so low on supplies that they are reusing masks for up to a week, slathering them with hand sanitizer between shifts.</span></p><p><span style="font-size: 20px; ">Some of the jump in New York’s cases can be traced to significantly increased testing, which the state began this week. But the escalation, and the response, could offer other states a glimpse of what might be in store if the virus continues to spread. Gov. Andrew M. Cuomo on Friday urged residents to stay indoors and ordered nonessential businesses to keep workers home.</span></p><p><span style="font-size: 20px; ">State officials have projected that the number of coronavirus cases in New York will peak in early May. Both the governor and Mayor Bill de Blasio have used wartime metaphors and analogies to paint a grim picture of what to expect. Officials have said the state would need to double its available hospital beds to 100,000 and could be short as many as 25,000 ventilators.</span></p><p><span style="font-size: 20px; ">As it prepares for the worst-case projections, the state is asking retired health care workers to volunteer to help. The city is considering trying to turn the Jacob K. Javits Convention Center in Manhattan into a makeshift hospital.</span></p><p><span style="font-size: 20px; ">“The most striking part is the speed with which it has ramped up,” said Ben McVane, an emergency room doctor at Elmhurst Hospital Center in Queens. “It went from a small trickle of patients to a deluge of patients in our departments.”</span></p><p><span style="font-size: 20px; ">At Elmhurst, a 545-bed public hospital that serves a large population of undocumented immigrants and low-income residents, coronavirus patients have begun to crowd out others. Protective gear is running low. Doctors are worried there will be a shortage of ventilators.</span></p><p><span style="font-size: 20px; ">Outside the facility, at a tent housing a new mobile-testing site, a line snaked around the building on Friday, a sign of the demand on testing and how much worse the influx could become.</span></p>
+            <div class="narrow-area-left serif-area" id="blog-post-content-area">
+                <p><span style="font-size: 18px; ">New York State’s long-feared surge of coronavirus cases has begun, thrusting the medical system toward a crisis point.</span></p><p><span style="font-size: 18px; ">In a startlingly quick ascent, officials reported on Friday that the state was closing in on 8,000 positive tests, about half the cases in the country. The number was 10 times higher than what was reported earlier in the week.</span></p><p><span style="font-size: 18px; ">In the Bronx, doctors at Lincoln Medical and Mental Health Center say they have only a few remaining ventilators for patients who need them to breathe. In Brooklyn, doctors at Kings County Hospital Center say they are so low on supplies that they are reusing masks for up to a week, slathering them with hand sanitizer between shifts.</span></p><p><span style="font-size: 18px; ">Some of the jump in New York’s cases can be traced to significantly increased testing, which the state began this week. But the escalation, and the response, could offer other states a glimpse of what might be in store if the virus continues to spread. Gov. Andrew M. Cuomo on Friday urged residents to stay indoors and ordered nonessential businesses to keep workers home.</span></p><p><span style="font-size: 18px; ">State officials have projected that the number of coronavirus cases in New York will peak in early May. Both the governor and Mayor Bill de Blasio have used wartime metaphors and analogies to paint a grim picture of what to expect. Officials have said the state would need to double its available hospital beds to 100,000 and could be short as many as 25,000 ventilators.</span></p><p><span style="font-size: 18px; ">As it prepares for the worst-case projections, the state is asking retired health care workers to volunteer to help. The city is considering trying to turn the Jacob K. Javits Convention Center in Manhattan into a makeshift hospital.</span></p><p><span style="font-size: 18px; ">“The most striking part is the speed with which it has ramped up,” said Ben McVane, an emergency room doctor at Elmhurst Hospital Center in Queens. “It went from a small trickle of patients to a deluge of patients in our departments.”</span></p><p><span style="font-size: 18px; ">At Elmhurst, a 545-bed public hospital that serves a large population of undocumented immigrants and low-income residents, coronavirus patients have begun to crowd out others. Protective gear is running low. Doctors are worried there will be a shortage of ventilators.</span></p><p><span style="font-size: 18px; ">Outside the facility, at a tent housing a new mobile-testing site, a line snaked around the building on Friday, a sign of the demand on testing and how much worse the influx could become.</span></p>
 
                 <div class="blog-categories-container" style="margin-top: 12px; margin-bottom: 12px;">
 
@@ -240,7 +254,7 @@
                     var disqus_config = function () {
 
                         this.page.url = window.location
-                        .href; // Replace PAGE_URL with your page's canonical URL variable
+                            .href; // Replace PAGE_URL with your page's canonical URL variable
 
                         // TEST URL
                         //this.page.url = "https://hsscstc.github.io/blog/test.html"; 
@@ -252,7 +266,7 @@
                     (function () { // DON'T EDIT BELOW THIS LINE
                         var d = document,
                             s = d.createElement('script');
-                        s.src = 'https://issia.disqus.com/embed.js';
+                        s.src = 'https://hssc-1.disqus.com/embed.js';
                         s.setAttribute('data-timestamp', +new Date());
                         (d.head || d.body).appendChild(s);
                     })();
@@ -265,17 +279,18 @@
                 <div class="spacer"></div>
 
                 <span id="footer-logo-container">
-                    <img alt="ISSIA Logo" id="footer-logo" src="./content/images/logo.png">
-                    <span>Copyright © 2020 ISSIA</span>
+                    <img alt="HSSC Logo" id="footer-hssc-logo" src="./content/images/hsscLogo.png">
+                    <span>Copyright © 2020 HSSC</span>
                 </span>
             </footer>
 
             <!-- scripts -->
-            <script src="./scripts/global.js"></script>
-            <script src="./scripts/dateDisplay.js"></script>
-            <script src="./scripts/gallery.js"></script>
+            <script src="scripts/global.js"></script>
+            <script src="scripts/dateDisplay.js"></script>
+            <script src="scripts/blog.js"></script>
 
         </div>
+
 
         <footer id="footer-color-filler"></footer>
     </div>

@@ -2,7 +2,7 @@
 
 
 :root {
-    --accent-color: #8E183C;
+    --accent-color: #0070BA;
     /*--accent-color: #6A1A33;*/
 
     --lightGray: #EEEEEE;
@@ -19,9 +19,6 @@
 .clearfix {
     overflow: auto;
 }
-
-
-
 
 .spacer {
     height: 24px;
@@ -69,6 +66,11 @@ p {
 #bodyarea {
     transition: margin 200ms ease;
     width: 100%;
+}
+
+.serif-area {
+    font-family: "Merriweather", 'Times New Roman', Times, serif;
+    font-size: 18px;
 }
 
 #body-container {
@@ -145,7 +147,7 @@ header {
 #header-logo {
     display: inline-block;
     vertical-align: middle;
-    height: 130px;
+    height: 150px;
 }
 
 /* #endregion */
@@ -156,7 +158,7 @@ header {
     height: 30px;
     text-align: center;
     width: 100%;
-    margin: -10px 0 16px 0;
+    margin: -40px 0 16px 0;
 }
 
 /* #region Navigation */
@@ -337,7 +339,7 @@ header {
     top: -58px;
 }
 
-#topbar-logo {
+#topbar-hssc-logo {
     height: 48px;
     margin: 4px;
     float: right;
@@ -411,7 +413,7 @@ footer {
 
 
 
-#footer-logo {
+#footer-hssc-logo {
     height: 72px;
 }
 
@@ -429,6 +431,7 @@ footer {
 }
 
 
+
 /* #endregion */
 
 @media (max-width: 1300px) {
@@ -436,7 +439,10 @@ footer {
     #body-container {
         width: 85%;
     }
-
+    
+    #header-logo-text {
+        display: none;
+    }
 
     #date-container {
         margin-top: -4px;
@@ -467,7 +473,7 @@ footer {
     }
 }
 
-/* when it is not wide enough to display the text */
+/* when it is not wide enough to display the hssc text */
 
 @media (max-width: 1100px) {
     #body-container {
@@ -535,7 +541,11 @@ footer {
     #header-logo {
         height: 100px;
     }
+    
 
+    #headerLogoText {
+        display: none;
+    }
 
     
     #navigation {

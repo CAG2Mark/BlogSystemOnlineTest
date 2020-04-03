@@ -5,16 +5,12 @@
 <html lang="en" id="html">
 
 <head>
-
     <base href="../index.html" />
 
     <meta name="selectedNavigationItem" content="BLOG">
+
     <link rel="stylesheet" type="text/css" href="./styles/global.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/home.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/category.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/blog.css" />
-    <link rel="shortcut icon" href="./icon.ico" />
+    <link rel="stylesheet" type="text/css" href="./styles/blog.css">
 
 
     <!-- SOCIAL EMBEDS -->
@@ -27,10 +23,9 @@
     <!-- $(REGION HEADER_IMAGE)$(ENDREGION HEADER_IMAGE) -->
     <meta name="twitter:card" content="summary_large_image">
 
-
-
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+
     <title>Coronavirus death toll leaps in China's Hubei province</title>
 
     <!-- fonts -->
@@ -39,6 +34,10 @@
 
     <!-- Acumin via. typekit -->
     <link rel="stylesheet" href="https://use.typekit.net/idx8cma.css">
+
+    <!-- Merriweather via. google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 
 
 </head>
@@ -54,6 +53,10 @@
             </li>
             <li>
                 <a href="./blog/blog.html">Articles</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="./clubs/clubs.html">Clubs</a>
                 <span class="nav-border"></span>
             </li>
             <li>
@@ -82,7 +85,7 @@
         <div id="topbar" class="top-desktop-hidden">
 
             <a href="./index.html">
-                <img alt="ISSIA Logo" class="mobileonly" id="topbar-logo" src="./content/images/logo.png">
+                <img alt="HSSC Logo" class="mobileonly" id="topbar-hssc-logo" src="./content/images/hsscLogo.png">
             </a>
 
             <span class="mobileonly" id="hamburger-container">
@@ -100,7 +103,10 @@
                     <span class="nav-border"></span>
                     <a href="./blog/blog.html">Articles</a>
                 </li>
-
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="./clubs/clubs.html">Clubs</a></li>
+                <li>
                 <li>
                     <span class="nav-border"></span>
                     <a href="./about.html">About</a></li>
@@ -126,7 +132,8 @@
             <header>
                 <a href="index.html">
                     <div id="logo-container">
-                        <img alt="ISSIA Logo" class="no-select" src="./content/images/logo.png" id="header-logo">
+                        <img alt="HSSC Logo" class="no-select" src="./content/images/hsscLogo.png" id="header-logo">
+                        <img class="noSelect" id="header-logo-text" src="./content/images/hsscText.png">
                     </div>
                 </a>
                 <div id="date-container">
@@ -141,6 +148,10 @@
                             <span class="nav-border"></span>
                             <a href="./blog/blog.html">Articles</a>
                         </li>
+                        <li>
+                            <span class="nav-border"></span>
+                            <a href="./clubs/clubs.html">Clubs</a></li>
+                        <li>
                         <li>
                             <span class="nav-border"></span>
                             <a href="./about.html">About</a></li>
@@ -165,7 +176,6 @@
                 <div class="separator mobileonly"></div>
             </header>
 
-
             <!-- ALL CONTENT GOES HERE -->
 
             <div class="wide-area">
@@ -184,28 +194,32 @@
 
                 </div>
 
-                <h1 class="headline">Coronavirus death toll leaps in China's Hubei province</h1>
+                <span class="serif-area">
 
-                <!-- $(REGION HEADER_IMAGE)$(ENDREGION HEADER_IMAGE) -->
+                    <h1 class="headline">Coronavirus death toll leaps in China's Hubei province</h1>
+
+                    <!-- $(REGION HEADER_IMAGE)$(ENDREGION HEADER_IMAGE) -->
 
 
-                <div class="blog-post-data-container" id="blog-post-author-container">
-                    <span>By </span>
-                    <span>Winni Zhou, Dominique Patton</span>
-                </div>
+                    <div class="blog-post-data-container" id="blog-post-author-container">
+                        <span>By </span>
+                        <span>Winni Zhou, Dominique Patton</span>
+                    </div>
 
-                <div class="blog-post-data-container" id="blog-post-date-container">
-                    <span>Published on </span>
-                    <span>February 13th, 2020</span>
-                </div>
+                    <div class="blog-post-data-container" id="blog-post-date-container">
+                        <span>Published on </span>
+                        <span>February 13th, 2020</span>
+                    </div>
 
-                <div style="height: 6px"></div>
+                    <div style="height: 6px"></div>
 
-                <div class="separator"></div>
+                    <div class="separator"></div>
+
+                </span>
             </div>
 
-            <div class="narrow-area-left" id="blog-post-content-area">
-                <p><span style="font-size: 20px; ">BEIJING (Reuters) - The Chinese province at the epicenter of the coronavirus outbreak reported a record rise in the death toll on Thursday, as global health experts warned the epidemic could get far worse before it is brought under control.</span></p><p><span style="font-size: 20px; ">A man wearing a mask is seen on a bus, in downtown Shanghai, China, as the country is hit by an outbreak of a new coronavirus, February 12, 2020. REUTERS/Aly Song</span></p><p><span style="font-size: 20px; ">Health officials in Hubei province said 242 people had died from the flu-like virus on Wednesday, the fastest rise in the daily count since the pathogen was identified in December, and bringing the total number of deaths in the province to 1,310. The previous record rise in the toll was 103 on Feb. 10.</span></p><p><span style="font-size: 20px; ">The grim new tally came a day after China had reported its lowest number of new coronavirus cases in two weeks, bolstering a forecast by Beijing’s senior medical adviser for the outbreak there to end by April.</span></p><p><span style="font-size: 20px; ">But the 2,015 new confirmed cases reported in mainland China on Wednesday was dwarfed by the 14,840 new cases reported in Hubei alone on Thursday, when provincial officials said they had adopted a new methodology for counting infections.</span></p><p></p><p><span style="font-size: 20px; ">It was not immediately clear how the new methodology affected the results, nor why the death toll rose so sharply.</span></p><p></p><p><span style="font-size: 20px; ">Asian stock markets wobbled and the safe-havens of the Japanese yen, gold and bonds rose after the Hubei numbers were reported. [MKTS/GLOB]</span></p><p></p><p><span style="font-size: 20px; ">RELATED COVERAGE</span></p><p><span style="font-size: 20px; ">Cruise ship shunned over coronavirus fears arrives in Cambodia</span></p><p><span style="font-size: 20px; ">CDC confirms 14th U.S. case of coronavirus with patient in San Diego</span></p><p><span style="font-size: 20px; ">See more stories</span></p><p><span style="font-size: 20px; ">Results from Chinese trials testing a combination of antiviral drugs used to treat HIV against the new coronavirus are due in weeks, but experts say a vaccine could still be months away.</span></p><p></p><p><span style="font-size: 20px; ">WHO chief Tedros Adhanom Ghebreyesus warned any apparent slowdown in the spread of the epidemic should be viewed with “extreme caution”.</span></p><p></p><p><span style="font-size: 20px; ">“This outbreak could still go in any direction,” he told a briefing in Geneva.</span></p><p></p><p><span style="font-size: 20px; ">Another expert said that while the coronavirus may be peaking in China, this was not the case elsewhere.</span></p><p></p><p><span style="font-size: 20px; ">“It has spread to other places where it’s the beginning of the outbreak,” Dale Fisher, head of the Global Outbreak Alert and Response Network coordinated by the WHO, said in an interview in Singapore. “In Singapore, we are at the beginning.”</span></p><p></p><p><span style="font-size: 20px; ">Singapore has 50 cases, including one found at its biggest bank, DBS (DBSM.SI), on Wednesday that caused an evacuation at the head office.</span></p><p></p><p><span style="font-size: 20px; ">Hundreds of infections have been reported in more than two dozen other countries and territories, but only two people have died from the virus outside mainland China - one in Hong Kong and another in the Philippines.</span></p><p></p><p><span style="font-size: 20px; ">Tedros said a WHO-led advance team that traveled to China this week had made good progress on the composition and scope of its work.</span></p><p></p><p><span style="font-size: 20px; ">The head of the WHO’s emergency program, Dr. Mike Ryan, said it was too early “to predict the beginning, the middle or end of the epidemic”.</span></p><p></p><p><span style="font-size: 20px; font-weight: bold; ">QUARANTINED CRUISES</span></p><p><span style="font-size: 20px; ">The biggest cluster of cases outside China is on a cruise ship quarantined off the Japanese port of Yokohama, with 175 of about 3,700 people on board having tested positive.</span></p><p></p><p><span style="font-size: 20px; ">The ship’s operator, Carnival Corp (CCL.N), is among foreign companies taking a hit from the outbreak, with many flights suspended and businesses disrupted.</span></p><p></p><p><span style="font-size: 20px; ">Planemaker Boeing (BA.N) said airlines were facing a fall in profits as the crisis reduces passenger demand and prolongs weakness in economically sensitive air freight.</span></p><p></p><p><span style="font-size: 20px; ">Global ship deliveries have also been dented as yards in China, one of the biggest shipbuilders, struggle to get fully back to work.</span></p><p></p><p><span style="font-size: 20px; ">There was a happy ending in sight for another cruise ship, the MS Westerdam, which Thailand, Japan, Taiwan, Guam and the Philippines had refused to let dock over fears one of its 1,455 passengers and 802 crew might have the virus.</span></p><p></p><p><span style="font-size: 20px; ">Cambodia agreed to let it land, the Holland America Line said.</span></p><p></p><p><span style="font-size: 20px; ">“This is an example of international solidarity we have been consistently calling for,” WHO chief Tedros said. “Outbreaks can bring out the best and the worst in people.”</span></p><p></p><p><span style="font-size: 20px; ">The outbreak is suspected to have originated in the Hubei provincial capital of Wuhan in December. The city of 11 million people remains under virtual lockdown, and other major Chinese cities are facing severe travel restrictions.</span></p><p></p><p><span style="font-size: 20px; ">The latest big event to be canceled, moved or postponed was the Formula 1 Chinese Grand Prix, originally set for Shanghai on April 19.</span></p><p></p><p><span style="font-size: 20px; ">For more coronavirus news, click here. here</span></p><p></p><p><span style="font-size: 20px; ">(Graphic: Comparing new coronavirus to SARS and MERS - here)</span></p><p></p><p><span style="font-size: 20px; ">(Graphic: Reuters Graphics tracks and explains the deadly virus spreading around the world - here)</span></p>
+            <div class="narrow-area-left serif-area" id="blog-post-content-area">
+                <p><span style="font-size: 18px; ">BEIJING (Reuters) - The Chinese province at the epicenter of the coronavirus outbreak reported a record rise in the death toll on Thursday, as global health experts warned the epidemic could get far worse before it is brought under control.</span></p><p><span style="font-size: 18px; ">A man wearing a mask is seen on a bus, in downtown Shanghai, China, as the country is hit by an outbreak of a new coronavirus, February 12, 2020. REUTERS/Aly Song</span></p><p><span style="font-size: 18px; ">Health officials in Hubei province said 242 people had died from the flu-like virus on Wednesday, the fastest rise in the daily count since the pathogen was identified in December, and bringing the total number of deaths in the province to 1,310. The previous record rise in the toll was 103 on Feb. 10.</span></p><p><span style="font-size: 18px; ">The grim new tally came a day after China had reported its lowest number of new coronavirus cases in two weeks, bolstering a forecast by Beijing’s senior medical adviser for the outbreak there to end by April.</span></p><p><span style="font-size: 18px; ">But the 2,015 new confirmed cases reported in mainland China on Wednesday was dwarfed by the 14,840 new cases reported in Hubei alone on Thursday, when provincial officials said they had adopted a new methodology for counting infections.</span></p><p></p><p><span style="font-size: 18px; ">It was not immediately clear how the new methodology affected the results, nor why the death toll rose so sharply.</span></p><p></p><p><span style="font-size: 18px; ">Asian stock markets wobbled and the safe-havens of the Japanese yen, gold and bonds rose after the Hubei numbers were reported. [MKTS/GLOB]</span></p><p></p><p><span style="font-size: 18px; ">RELATED COVERAGE</span></p><p><span style="font-size: 18px; ">Cruise ship shunned over coronavirus fears arrives in Cambodia</span></p><p><span style="font-size: 18px; ">CDC confirms 14th U.S. case of coronavirus with patient in San Diego</span></p><p><span style="font-size: 18px; ">See more stories</span></p><p><span style="font-size: 18px; ">Results from Chinese trials testing a combination of antiviral drugs used to treat HIV against the new coronavirus are due in weeks, but experts say a vaccine could still be months away.</span></p><p></p><p><span style="font-size: 18px; ">WHO chief Tedros Adhanom Ghebreyesus warned any apparent slowdown in the spread of the epidemic should be viewed with “extreme caution”.</span></p><p></p><p><span style="font-size: 18px; ">“This outbreak could still go in any direction,” he told a briefing in Geneva.</span></p><p></p><p><span style="font-size: 18px; ">Another expert said that while the coronavirus may be peaking in China, this was not the case elsewhere.</span></p><p></p><p><span style="font-size: 18px; ">“It has spread to other places where it’s the beginning of the outbreak,” Dale Fisher, head of the Global Outbreak Alert and Response Network coordinated by the WHO, said in an interview in Singapore. “In Singapore, we are at the beginning.”</span></p><p></p><p><span style="font-size: 18px; ">Singapore has 50 cases, including one found at its biggest bank, DBS (DBSM.SI), on Wednesday that caused an evacuation at the head office.</span></p><p></p><p><span style="font-size: 18px; ">Hundreds of infections have been reported in more than two dozen other countries and territories, but only two people have died from the virus outside mainland China - one in Hong Kong and another in the Philippines.</span></p><p></p><p><span style="font-size: 18px; ">Tedros said a WHO-led advance team that traveled to China this week had made good progress on the composition and scope of its work.</span></p><p></p><p><span style="font-size: 18px; ">The head of the WHO’s emergency program, Dr. Mike Ryan, said it was too early “to predict the beginning, the middle or end of the epidemic”.</span></p><p></p><p><span style="font-size: 18px; font-weight: bold; ">QUARANTINED CRUISES</span></p><p><span style="font-size: 18px; ">The biggest cluster of cases outside China is on a cruise ship quarantined off the Japanese port of Yokohama, with 175 of about 3,700 people on board having tested positive.</span></p><p></p><p><span style="font-size: 18px; ">The ship’s operator, Carnival Corp (CCL.N), is among foreign companies taking a hit from the outbreak, with many flights suspended and businesses disrupted.</span></p><p></p><p><span style="font-size: 18px; ">Planemaker Boeing (BA.N) said airlines were facing a fall in profits as the crisis reduces passenger demand and prolongs weakness in economically sensitive air freight.</span></p><p></p><p><span style="font-size: 18px; ">Global ship deliveries have also been dented as yards in China, one of the biggest shipbuilders, struggle to get fully back to work.</span></p><p></p><p><span style="font-size: 18px; ">There was a happy ending in sight for another cruise ship, the MS Westerdam, which Thailand, Japan, Taiwan, Guam and the Philippines had refused to let dock over fears one of its 1,455 passengers and 802 crew might have the virus.</span></p><p></p><p><span style="font-size: 18px; ">Cambodia agreed to let it land, the Holland America Line said.</span></p><p></p><p><span style="font-size: 18px; ">“This is an example of international solidarity we have been consistently calling for,” WHO chief Tedros said. “Outbreaks can bring out the best and the worst in people.”</span></p><p></p><p><span style="font-size: 18px; ">The outbreak is suspected to have originated in the Hubei provincial capital of Wuhan in December. The city of 11 million people remains under virtual lockdown, and other major Chinese cities are facing severe travel restrictions.</span></p><p></p><p><span style="font-size: 18px; ">The latest big event to be canceled, moved or postponed was the Formula 1 Chinese Grand Prix, originally set for Shanghai on April 19.</span></p><p></p><p><span style="font-size: 18px; ">For more coronavirus news, click here. here</span></p><p></p><p><span style="font-size: 18px; ">(Graphic: Comparing new coronavirus to SARS and MERS - here)</span></p><p></p><p><span style="font-size: 18px; ">(Graphic: Reuters Graphics tracks and explains the deadly virus spreading around the world - here)</span></p>
 
                 <div class="blog-categories-container" style="margin-top: 12px; margin-bottom: 12px;">
 
@@ -239,7 +253,7 @@
                     var disqus_config = function () {
 
                         this.page.url = window.location
-                        .href; // Replace PAGE_URL with your page's canonical URL variable
+                            .href; // Replace PAGE_URL with your page's canonical URL variable
 
                         // TEST URL
                         //this.page.url = "https://hsscstc.github.io/blog/test.html"; 
@@ -251,7 +265,7 @@
                     (function () { // DON'T EDIT BELOW THIS LINE
                         var d = document,
                             s = d.createElement('script');
-                        s.src = 'https://issia.disqus.com/embed.js';
+                        s.src = 'https://hssc-1.disqus.com/embed.js';
                         s.setAttribute('data-timestamp', +new Date());
                         (d.head || d.body).appendChild(s);
                     })();
@@ -264,17 +278,18 @@
                 <div class="spacer"></div>
 
                 <span id="footer-logo-container">
-                    <img alt="ISSIA Logo" id="footer-logo" src="./content/images/logo.png">
-                    <span>Copyright © 2020 ISSIA</span>
+                    <img alt="HSSC Logo" id="footer-hssc-logo" src="./content/images/hsscLogo.png">
+                    <span>Copyright © 2020 HSSC</span>
                 </span>
             </footer>
 
             <!-- scripts -->
-            <script src="./scripts/global.js"></script>
-            <script src="./scripts/dateDisplay.js"></script>
-            <script src="./scripts/gallery.js"></script>
+            <script src="scripts/global.js"></script>
+            <script src="scripts/dateDisplay.js"></script>
+            <script src="scripts/blog.js"></script>
 
         </div>
+
 
         <footer id="footer-color-filler"></footer>
     </div>

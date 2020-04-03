@@ -5,19 +5,17 @@
 <html lang="en" id="html">
 
 <head>
-    
     <base href="../index.html" />
 
     <meta name="selectedNavigationItem" content="BLOG">
+
     <link rel="stylesheet" type="text/css" href="./styles/global.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/home.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/category.css" />
-    <link rel="shortcut icon" href="./icon.ico" />
+    <link rel="stylesheet" type="text/css" href="./styles/category.css">
 
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>HSSC</title>
+
+    <title>Death - HSSC</title>
 
     <!-- fonts -->
 
@@ -26,6 +24,9 @@
     <!-- Acumin via. typekit -->
     <link rel="stylesheet" href="https://use.typekit.net/idx8cma.css">
 
+    <!-- Merriweather via. google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -40,6 +41,10 @@
             </li>
             <li>
                 <a href="./blog/blog.html">Articles</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="./clubs/clubs.html">Clubs</a>
                 <span class="nav-border"></span>
             </li>
             <li>
@@ -68,7 +73,7 @@
         <div id="topbar" class="top-desktop-hidden">
 
             <a href="./index.html">
-                <img alt="ISSIA Logo" class="mobileonly" id="topbar-logo" src="./content/images/logo.png">
+                <img alt="HSSC Logo" class="mobileonly" id="topbar-hssc-logo" src="./content/images/hsscLogo.png">
             </a>
 
             <span class="mobileonly" id="hamburger-container">
@@ -86,7 +91,10 @@
                     <span class="nav-border"></span>
                     <a href="./blog/blog.html">Articles</a>
                 </li>
-
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="./clubs/clubs.html">Clubs</a></li>
+                <li>
                 <li>
                     <span class="nav-border"></span>
                     <a href="./about.html">About</a></li>
@@ -112,7 +120,8 @@
             <header>
                 <a href="index.html">
                     <div id="logo-container">
-                        <img alt="ISSIA Logo" class="no-select" src="./content/images/logo.png" id="header-logo">
+                        <img alt="HSSC Logo" class="no-select" src="./content/images/hsscLogo.png" id="header-logo">
+                        <img class="noSelect" id="header-logo-text" src="./content/images/hsscText.png">
                     </div>
                 </a>
                 <div id="date-container">
@@ -127,6 +136,10 @@
                             <span class="nav-border"></span>
                             <a href="./blog/blog.html">Articles</a>
                         </li>
+                        <li>
+                            <span class="nav-border"></span>
+                            <a href="./clubs/clubs.html">Clubs</a></li>
+                        <li>
                         <li>
                             <span class="nav-border"></span>
                             <a href="./about.html">About</a></li>
@@ -151,52 +164,56 @@
                 <div class="separator mobileonly"></div>
             </header>
 
-
             <!-- ALL CONTENT GOES HERE -->
 
 
             <div class="wide-area clearfix">
-                <h1>Death</h1>
 
-                <!-- $(TEMPLATE CATEGORY_POST_TEMPLATE)$(ENDTEMPLATE CATEGORY_POST_TEMPLATE)-->
+                <span class="serif-area">
 
-                <!-- Parameters: Post template name. -->
+                    <h1 style="margin: 32px 0 16px 0">Death</h1>
 
-                <!-- $(REGION CATEGORY_POST_AREA CATEGORY_POST_TEMPLATE) -->
+                    <!-- $(TEMPLATE CATEGORY_POST_TEMPLATE)$(ENDTEMPLATE CATEGORY_POST_TEMPLATE)-->
 
-                
+                    <!-- Parameters: Post template name. -->
 
-                <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
-                <a class="category-link linkfix" href="./blog/coronavirus-death-toll-leaps-in-chinas-hubei-province.html">
-                    <div class="category-post-container">
+                    <!-- $(REGION CATEGORY_POST_AREA CATEGORY_POST_TEMPLATE) -->
 
-                        <!-- $(REGION HEADER_IMAGE)$(ENDREGION HEADER_IMAGE) -->
+                    
 
-                        <div
-                            class="category-post-details vertical-center category-post-left">
-                            <h3 class="nopadding">Coronavirus death toll leaps in China's Hubei province</h3>
+                    <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
+                    <a class="category-link linkfix" href="./blog/coronavirus-death-toll-leaps-in-chinas-hubei-province.html">
+                        <div class="category-post-container">
 
-                            <div class="category-post-meta-container">
-                                <span>By </span>
-                                <span>Winni Zhou, Dominique Patton</span>
-                                <span class="dot"></span>
-                                <span>February 13th, 2020</span>
+                            <!-- $(REGION HEADER_IMAGE)$(ENDREGION HEADER_IMAGE) -->
+
+                            <div
+                                class="category-post-details vertical-center category-post-left">
+                                <h3 class="nopadding">Coronavirus death toll leaps in China's Hubei province</h3>
+
+                                <div class="category-post-meta-container">
+                                    <span>By </span>
+                                    <span>Winni Zhou, Dominique Patton</span>
+                                    <span class="dot"></span>
+                                    <span>February 13th, 2020</span>
+                                </div>
+
+                                <!-- 100 specifies the maximum length of the preview -->
+                                <span class="category-post-content-preview">BEIJING (Reuters) - The Chinese province at the epicenter of the coronavirus outbreak(...)</span>
                             </div>
 
-                            <!-- 100 specifies the maximum length of the preview -->
-                            <span class="category-post-content-preview">BEIJING (Reuters) - The Chinese province at the epicenter of the coronavirus outbreak(...)</span>
+                            <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+
+                            <!-- $(REGION HEADER_IMAGE)$(ENDREGION HEADER_IMAGE) -->
+
                         </div>
 
-                        <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+                        <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
+                    </a>
 
-                        <!-- $(REGION HEADER_IMAGE)$(ENDREGION HEADER_IMAGE) -->
+                    <!-- $(ENDREGION CATEGORY_POST_AREA) -->
 
-                    </div>
-
-                    <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
-                </a>
-
-                <!-- $(ENDREGION CATEGORY_POST_AREA) -->
+                </span>
 
                 <div id="category-pages">
 
@@ -231,17 +248,18 @@
                 <div class="spacer"></div>
 
                 <span id="footer-logo-container">
-                    <img alt="ISSIA Logo" id="footer-logo" src="./content/images/logo.png">
-                    <span>Copyright © 2020 ISSIA</span>
+                    <img alt="HSSC Logo" id="footer-hssc-logo" src="content/images/hsscLogo.png">
+                    <span>Copyright © 2020 HSSC</span>
                 </span>
             </footer>
 
             <!-- scripts -->
-            <script src="./scripts/global.js"></script>
-            <script src="./scripts/dateDisplay.js"></script>
-            <script src="./scripts/gallery.js"></script>
+            <script src="scripts/global.js"></script>
+            <script src="scripts/dateDisplay.js"></script>
+            <script src="scripts/blog.js"></script>
 
         </div>
+
 
         <footer id="footer-color-filler"></footer>
     </div>

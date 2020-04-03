@@ -3,10 +3,10 @@
 <html lang="en" id="html">
 
 <head>
-    
+
     <base href="index.html" />
 
-    <meta name="selectedNavigationItem" content="HOME">
+    <meta name="selectedNavigationItem" content="BLOG">
     <link rel="stylesheet" type="text/css" href="./styles/global.css" />
     <link rel="stylesheet" type="text/css" href="./styles/gallery.css" />
     <link rel="stylesheet" type="text/css" href="./styles/home.css" />
@@ -24,6 +24,10 @@
     <!-- Acumin via. typekit -->
     <link rel="stylesheet" href="https://use.typekit.net/idx8cma.css">
 
+    <!-- Merriweather via. google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
 
 </head>
 
@@ -38,6 +42,10 @@
             </li>
             <li>
                 <a href="./blog/blog.html">Articles</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="./clubs/clubs.html">Clubs</a>
                 <span class="nav-border"></span>
             </li>
             <li>
@@ -66,7 +74,7 @@
         <div id="topbar" class="top-desktop-hidden">
 
             <a href="./index.html">
-                <img alt="ISSIA Logo" class="mobileonly" id="topbar-logo" src="./content/images/logo.png">
+                <img alt="HSSC Logo" class="mobileonly" id="topbar-hssc-logo" src="./content/images/hsscLogo.png">
             </a>
 
             <span class="mobileonly" id="hamburger-container">
@@ -84,7 +92,10 @@
                     <span class="nav-border"></span>
                     <a href="./blog/blog.html">Articles</a>
                 </li>
-
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="./clubs/clubs.html">Clubs</a></li>
+                <li>
                 <li>
                     <span class="nav-border"></span>
                     <a href="./about.html">About</a></li>
@@ -110,7 +121,8 @@
             <header>
                 <a href="index.html">
                     <div id="logo-container">
-                        <img alt="ISSIA Logo" class="no-select" src="./content/images/logo.png" id="header-logo">
+                        <img alt="HSSC Logo" class="no-select" src="./content/images/hsscLogo.png" id="header-logo">
+                        <img class="noSelect" id="header-logo-text" src="./content/images/hsscText.png">
                     </div>
                 </a>
                 <div id="date-container">
@@ -125,6 +137,10 @@
                             <span class="nav-border"></span>
                             <a href="./blog/blog.html">Articles</a>
                         </li>
+                        <li>
+                            <span class="nav-border"></span>
+                            <a href="./clubs/clubs.html">Clubs</a></li>
+                        <li>
                         <li>
                             <span class="nav-border"></span>
                             <a href="./about.html">About</a></li>
@@ -151,14 +167,266 @@
 
             <!-- ALL CONTENT GOES HERE -->
 
-            <h1>Homepage not yet procured.</h1>
+            <h1 class="text-center">We are the HSSC.</h1>
+            <div class="gallery">
+                <div class="gallery-container">
+                    <img src="./content/images/galleries/home/1.jpg">
+                </div>
+                <div class="gallery-container">
+                    <img src="./content/images/galleries/home/2.jpg">
+                </div>
+                <div class="gallery-container">
+                    <img src="./content/images/galleries/home/3.jpg">
+                </div>
+                <div class="gallery-container">
+                    <img src="./content/images/galleries/home/4.jpg">
+                </div>
+                <div class="gallery-container">
+                    <img src="./content/images/galleries/home/5.jpg">
+                </div>
+                <div class="gallery-container">
+                    <img src="./content/images/galleries/home/6.jpg">
+                </div>
+
+                <div class="gallery-overlay">
+                    <span class="gallery-overlay-indicator-container no-select region-indicators">
+                        <span class="indicator template template-indicator"></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="wide-area">
+                <h2 class="text-center" id="goal-text">Our goal is to strengthen the standing of humanities and social
+                    science disciplines at Sha Tin College.</h2>
+            </div>
+
+            <!-- MUN -->
+            <div class="wide-area" id="clubs-container">
+                <a class="club-container" href="./clubs/mun.html">
+                    <h1 class="text-center club-title no-select">MODEL UNITED NATIONS</h1>
+                    <div class="club-container-overlay">
+                    </div>
+                    <img src="./content/images/clubs/mun.jpg" alt="Model United Nations">
+                </a>
+                <a class="club-container" href="./clubs/psychology.html">
+                    <h1 class="text-center club-title no-select">PSYCHOLOGY CLUB</h1>
+                    <div class="club-container-overlay">
+                    </div>
+                    <img src="./content/images/clubs/psychology.jpg" alt="Psychology Club">
+                </a>
+                <a class="club-container" href="./clubs/mocktrial.html">
+                    <h1 class="text-center club-title no-select">MOCK TRIAL</h1>
+                    <div class="club-container-overlay">
+                    </div>
+                    <img src="./content/images/clubs/mocktrial.jpg" alt="Mock Trial">
+                </a>
+                <a class="club-container" href="./clubs/unitedmag.html">
+                    <h1 class="text-center club-title no-select">UNITED MAGAZINE</h1>
+                    <div class="club-container-overlay">
+                    </div>
+                    <img src="./content/images/clubs/united.jpg" alt="">
+                </a>
+                <a class="club-container" href="./clubs/debate.html">
+                    <h1 class="text-center club-title no-select">DEBATE CLUB</h1>
+                    <div class="club-container-overlay">
+                    </div>
+                    <img src="./content/images/clubs/debate.jpg" alt="">
+                </a>
+            </div>
+
+            <h1 class="text-center">Read our Student Articles</h1>
+
+            <div class="wide-area serif-area">
+
+                <!-- $(TEMPLATE CATEGORY_POST_TEMPLATE_HOME)$(ENDTEMPLATE CATEGORY_POST_TEMPLATE_HOME)-->
+
+                <!-- Parameters: template name, category index, number of posts to display.-->
+                <!-- $(REGION FOREIGN_CATEGORY_CONTAINER CATEGORY_POST_TEMPLATE_HOME 0 5) -->
+
+                
+                <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
+                <a class="category-link linkfix" href="./blog/the-extent-of-spreading-social-panic-by-the-media-regarding-coronavirus.html">
+                    <div class="category-post-container">
+
+                        <!-- $(REGION HEADER_IMAGE) -->
+                        <img class="mobileonly" src="./content/images/17SXug6hYC7sZb9s_HEADER.png">
+                        <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                        <div
+                            class="category-post-details vertical-center ">
+                            <h3 class="nopadding">The extent of spreading social panic by the media regarding Coronavirus</h3>
+
+                            <div class="category-post-meta-container">
+                                <span>By </span>
+                                <span>Charlton Sullivan</span>
+                                <span class="dot"></span>
+                                <span>April 3rd, 2020</span>
+                            </div>
+
+                            <!-- 100 specifies the maximum length of the preview -->
+                            <span class="category-post-content-preview">Recently, regarding the recent outbreak of the new coronavirus COVID-2019 in Wuhan Pr(...)</span>
+                        </div>
+
+                        <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+
+                        <!-- $(REGION HEADER_IMAGE) -->
+                        <img class="desktoponly" src="./content/images/17SXug6hYC7sZb9s_HEADER.png">
+                        <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                    </div>
+
+                    <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
+                </a>
+
+                
+                <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
+                <a class="category-link linkfix" href="./blog/the-impact-of-transparency-and-information-flow-on-covid-19.html">
+                    <div class="category-post-container">
+
+                        <!-- $(REGION HEADER_IMAGE) -->
+                        <img class="mobileonly" src="./content/images/ylCsOCQfUlTW1HGS_HEADER.png">
+                        <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                        <div
+                            class="category-post-details vertical-center ">
+                            <h3 class="nopadding">The Impact of Transparency and Information Flow on Covid-19</h3>
+
+                            <div class="category-post-meta-container">
+                                <span>By </span>
+                                <span>Ronni Kwok</span>
+                                <span class="dot"></span>
+                                <span>April 3rd, 2020</span>
+                            </div>
+
+                            <!-- 100 specifies the maximum length of the preview -->
+                            <span class="category-post-content-preview">The recent outbreak of the deadly Covid-19 has spurred global action and attention. O(...)</span>
+                        </div>
+
+                        <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+
+                        <!-- $(REGION HEADER_IMAGE) -->
+                        <img class="desktoponly" src="./content/images/ylCsOCQfUlTW1HGS_HEADER.png">
+                        <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                    </div>
+
+                    <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
+                </a>
+
+                
+                <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
+                <a class="category-link linkfix" href="./blog/hong-kongs-caged-population.html">
+                    <div class="category-post-container">
+
+                        <!-- $(REGION HEADER_IMAGE) -->
+                        <img class="mobileonly" src="./content/images/Fsz6IJfzdHyp46my_HEADER.jpg">
+                        <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                        <div
+                            class="category-post-details vertical-center ">
+                            <h3 class="nopadding">Hong Kong’s Caged Population</h3>
+
+                            <div class="category-post-meta-container">
+                                <span>By </span>
+                                <span>Todd Tsang</span>
+                                <span class="dot"></span>
+                                <span>April 3rd, 2020</span>
+                            </div>
+
+                            <!-- 100 specifies the maximum length of the preview -->
+                            <span class="category-post-content-preview">Hong Kong. Known for our international trade, cultural diversity, thriving economy, a(...)</span>
+                        </div>
+
+                        <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+
+                        <!-- $(REGION HEADER_IMAGE) -->
+                        <img class="desktoponly" src="./content/images/Fsz6IJfzdHyp46my_HEADER.jpg">
+                        <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                    </div>
+
+                    <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
+                </a>
+
+                
+                <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
+                <a class="category-link linkfix" href="./blog/interesting-past-times.html">
+                    <div class="category-post-container">
+
+                        <!-- $(REGION HEADER_IMAGE) -->
+                        <img class="mobileonly" src="./content/images/zHar7syEwPqDEJgv_HEADER.jpg">
+                        <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                        <div
+                            class="category-post-details vertical-center ">
+                            <h3 class="nopadding">Interesting Past Times</h3>
+
+                            <div class="category-post-meta-container">
+                                <span>By </span>
+                                <span>Michelle Li</span>
+                                <span class="dot"></span>
+                                <span>April 3rd, 2020</span>
+                            </div>
+
+                            <!-- 100 specifies the maximum length of the preview -->
+                            <span class="category-post-content-preview">We all have been under ‘house-arrest’ ever since the end of the Chinese New Year holi(...)</span>
+                        </div>
+
+                        <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+
+                        <!-- $(REGION HEADER_IMAGE) -->
+                        <img class="desktoponly" src="./content/images/zHar7syEwPqDEJgv_HEADER.jpg">
+                        <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                    </div>
+
+                    <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
+                </a>
+
+                
+                <!-- Everything inside of this will be treated by the application as if it were a blog post page-->
+                <a class="category-link linkfix" href="./blog/how-covid-19-creates-huge-learning-disadvantages-for-hk-students-.html">
+                    <div class="category-post-container">
+
+                        <!-- $(REGION HEADER_IMAGE)$(ENDREGION HEADER_IMAGE) -->
+
+                        <div
+                            class="category-post-details vertical-center category-post-left">
+                            <h3 class="nopadding">How Covid-19 creates huge learning disadvantages for HK students </h3>
+
+                            <div class="category-post-meta-container">
+                                <span>By </span>
+                                <span>Ernest Chan</span>
+                                <span class="dot"></span>
+                                <span>April 3rd, 2020</span>
+                            </div>
+
+                            <!-- 100 specifies the maximum length of the preview -->
+                            <span class="category-post-content-preview">The recent outbreak of covid-19 this year in January has caused huge impacts in suppl(...)</span>
+                        </div>
+
+                        <div class="separator-gray mobileonly" style="margin: 4px 0 12px 0;"></div>
+
+                        <!-- $(REGION HEADER_IMAGE)$(ENDREGION HEADER_IMAGE) -->
+
+                    </div>
+
+                    <div class="separator-gray desktoponly" style="margin: 4px 0 12px 0;"></div>
+                </a>
+
+                <!-- $(ENDREGION FOREIGN_CATEGORY_CONTAINER) -->
+
+                <a class="linkfix" href="./blog/blog.html">
+                    <h3>VIEW ALL OF OUR ARTICLES</h3>
+                </a>
+            </div>
 
             <footer>
                 <div class="spacer"></div>
 
                 <span id="footer-logo-container">
-                    <img alt="ISSIA Logo" id="footer-logo" src="./content/images/logo.png">
-                    <span>Copyright © 2020 ISSIA</span>
+                    <img alt="HSSC Logo" id="footer-hssc-logo" src="./content/images/hsscLogo.png">
+                    <span>Copyright © 2020 HSSC</span>
                 </span>
             </footer>
 
@@ -168,6 +436,7 @@
             <script src="./scripts/gallery.js"></script>
 
         </div>
+
 
         <footer id="footer-color-filler"></footer>
     </div>
