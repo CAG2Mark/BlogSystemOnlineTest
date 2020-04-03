@@ -499,6 +499,10 @@ footer {
 
 @media (max-width: 600px) {
 
+    .serif-area {
+        font: 20px acumin-pro, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    }
+
     .wide-area {
         width: 95%;
     }
