@@ -74,6 +74,11 @@ p {
     font-size: 18px;
 }
 
+.serif-area-all {
+    font-family: "Merriweather", 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
 #body-container {
     width: 80%;
     margin: 0 auto;
